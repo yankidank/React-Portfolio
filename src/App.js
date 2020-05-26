@@ -184,7 +184,7 @@ class App extends Component {
             </div>
           </main>
           <div className="page-divider"></div>
-          <div id="thenet" title="Ctrl+Shift">π</div>
+          <div id="thenet" title="Ctrl+Shift"></div>
           <Footer email={email} github={github} linkedin={linkedin} />
           {/* {this.state.toggle && <p>Hello</p> }
           <button onClick={this.toggle}>Toggle</button> */}

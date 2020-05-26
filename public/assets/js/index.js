@@ -24,6 +24,7 @@ if (jQuery.browser.mobile){
 		perspective: 500
 	});
 	// The Net
+	document.getElementById("thenet").innerHTML = "π";
 	var map = {};
 	onkeydown = onkeyup = function(e){
 		e = e || event;
