@@ -146,16 +146,6 @@ class App extends Component {
     document.body.appendChild(script);
   }
 
-  state = {
-    toggle: true,
-  }
-
-  toggle = () => {
-    this.setState({
-      toggle: !this.state.toggle
-    })
-  }
-
   render(){
     return (
       <div className="App">
@@ -186,8 +176,6 @@ class App extends Component {
           <div className="page-divider"></div>
           <div id="thenet" title="Ctrl+Shift"></div>
           <Footer email={email} github={github} linkedin={linkedin} />
-          {/* {this.state.toggle && <p>Hello</p> }
-          <button onClick={this.toggle}>Toggle</button> */}
       </div>
     );
   }
