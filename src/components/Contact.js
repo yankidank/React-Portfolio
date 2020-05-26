@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Contact.css";
 
 function Contact(props) {
 	const { title, email, github, linkedin, resume } = props;

@@ -1,0 +1,77 @@
+
+footer {
+	background-image:url('/assets/img/background.jpg');
+	width:100%;
+	background-color:#000;
+	height:600px;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size:cover;
+}
+footer:hover {
+	cursor:default;
+}
+footer .container {
+	position: static;
+	bottom:0;
+	flex: 0 0 100%;
+	max-width: 100%;
+	color:#fff;
+	text-align:center;
+	padding:1.2rem 1.8rem 1.5rem 1.8rem;
+}
+footer .container .row a {
+	color:#fff;
+}
+footer .container .row h2 {
+	color:#fff;
+	margin-top:50px;
+	font-weight:700;
+	font-size:4rem;
+	text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+}
+.footer-contact {
+	text-align:center;
+	margin:50px auto 3rem auto;
+	transform-style: preserve-3d;
+	background: url('/assets/img/profile.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border: 3px solid #fff;
+	border-radius: 260px;
+	height:260px;
+	width:260px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
+}
+.footer-inner-contact {
+	text-align:center;
+	padding-top:17rem;
+	border-radius: 260px;
+	height:100%;
+	opacity:0.85;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+	background-image: linear-gradient(125deg, #2669ad30 0%, #e81aff2e 100%); 
+    transform: translateZ(45px) translateX(0%) translateY(0%);
+}
+.footer-contact-icons {
+	text-align:center;
+	margin:0 auto;
+	width: 168px;
+}
+.footer-contact-icons a i {
+	background-size:55px;
+	height:55px;
+	width:55px;
+}
+.footer-contact-icons a i.icon_email {
+	background-image: url('/assets/img/icon/envelope-white.png');
+	background-size:30px;
+	margin-top:1px;
+}
+.footer-contact-icons a i.icon_github {
+	background-image: url('/assets/img/icon/github.png');
+}
+.footer-contact-icons a i.icon_linkedin {
+	background-image: url('/assets/img/icon/linkedin-white.png');
+}

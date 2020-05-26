@@ -1,0 +1,19 @@
+
+.education {
+	padding-top:4rem;
+	padding-bottom:4rem;
+}
+.eduSchool{
+	margin:0;
+	font-weight:700;
+	font-size: 1.65rem;
+	padding-top:1rem;
+	border-top:1px dotted #dfdbdb;
+}
+.eduDesc {
+	margin:0;
+	font-style: italic;
+	font-size: 1.35rem;
+	padding-bottom:1rem;
+	border-bottom:1px dotted #dfdbdb;
+}

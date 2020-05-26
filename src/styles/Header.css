@@ -1,0 +1,36 @@
+header h1 {
+	cursor: default;
+	margin:0 0 0 0;
+	font-family: 'Alegreya Sans', Helvetica, sans-serif;
+	font-size:7rem;
+}
+header h3 {
+	cursor: default;
+	font-family: 'Dancing Script', serif;
+	font-weight:normal;
+	font-size:3rem;
+	letter-spacing:0.1rem;
+	margin-top:0px;
+}
+.header {
+	width:100%;
+	margin:18rem auto 10rem auto;
+	text-align:center;
+	color:#fff;
+	padding:1.5rem 0;
+}
+
+@media only screen and (min-width: 1080px) {
+	header h3 {
+		font-weight:normal;
+		margin-bottom:8rem;
+	}
+}
+@media only screen and (max-width: 1080px) {
+	header h1 {
+		font-size:5rem;
+	}
+	header h3 {
+		font-size:2.4rem;
+	}
+}

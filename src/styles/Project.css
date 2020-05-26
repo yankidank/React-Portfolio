@@ -1,0 +1,64 @@
+
+.projects_buttons_wrapper {
+	margin-top: 12px;
+}
+.projects_buttons_wrapper a {
+	color:#fff;
+}
+.projects_buttons_wrapper a i.icon {
+    display: inline-block;
+    font-size: 1.8rem;
+	margin-top: 2px;
+	margin-right:5px;
+	margin-left: -16px;
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+}
+.projects_buttons_wrapper a i.icon_github{
+	width: 30px;
+	height:30px;
+	margin-top:3px;
+	background-image: url('/assets/img/icon/github.png');
+	background-size: 30px;
+}
+.projects_buttons_wrapper a i.icon_preview {
+	width: 15px;
+    height: 15px;
+    margin-top: 10px;
+	margin-right: 11px;
+	margin-left:-5px;
+    background-image: url('/assets/img/icon/external-link-alt.png');
+    background-size: 15px;
+}
+h3.project_title {
+	font-size:2.4rem;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+p.project_tags {
+	margin:0.5rem 0 0.8rem 0;
+	padding:0;
+}
+.project_tags em {
+	color:rgb(105, 105, 105);
+}
+p.project_description {
+	margin:0;
+	padding:0;
+	line-height:2rem;
+}
+.projects_wrapper_left img {
+	padding: 0.3rem;
+	margin: 0 0 1.5rem 0;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 12px 0 rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
+	object-fit: cover;
+}
+.projects_wrapper_right {
+	margin-bottom:2.0rem;
+	padding-bottom:1.0rem;
+}
+@media only screen and (max-width: 640px) {
+	.projects_buttons_wrapper{
+		text-align:center;
+	}
+}

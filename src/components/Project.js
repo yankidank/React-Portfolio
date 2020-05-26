@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Project.css";
 
 function Project(props) {
 	const portfolio = props.cards;

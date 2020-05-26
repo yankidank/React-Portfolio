@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Education.css";
 
 function Education(props) {
 	const { title, school1, school1_description, school2, school2_description } = props;
