@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import './App.css';
-import Header from "./components/Header";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Project from "./components/Project";
-import Footer from "./components/Footer";
+import Header from './components/Header';
+import About from './components/About';
+import Contact from './components/Contact';
+import Education from './components/Education';
+import Project from './components/Project';
+import Footer from './components/Footer';
 
+const email = 'eric@ericheikkinen.com';
+const github = 'yankidank';
+const linkedin = 'finnished';
 const portfolio = [
   {
     id: 1,
@@ -154,7 +157,7 @@ class App extends Component {
                   <div className="container">
                     <div className="row">
                       <About title="About Me" description="I'm a full stack developer with knowledge of front end design, web programming languages, and database technologies. Proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express.js, React.js, Node.js)." personal="My passions outside of web development include music, films, photography, and politics." />
-                      <Contact title="Contact" email="ericheikkinen@gmail.com" github="yankidank" linkedin="finnished" resume="Heikkinen_Resume.pdf" />
+                      <Contact title="Contact" email={email} github={github} linkedin={linkedin} resume="Heikkinen_Resume.pdf" />
                     </div>
                     <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
                     <div className="row">
@@ -171,7 +174,7 @@ class App extends Component {
           </main>
           <div className="page-divider"></div>
           <div id="thenet" title="Ctrl+Shift">π</div>
-          <Footer email="eric@ericheikkinen.com" github="yankidank" linkedin="finnished" />
+          <Footer email={email} github={github} linkedin={linkedin} />
           {/* {this.state.toggle && <p>Hello</p> }
           <button onClick={this.toggle}>Toggle</button> */}
       </div>
