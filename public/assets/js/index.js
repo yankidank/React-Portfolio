@@ -12,7 +12,7 @@ VanillaTilt.init(document.querySelectorAll(".projects_wrapper_left"), {
     gyroscopeMinAngleY: -45,
     gyroscopeMaxAngleY:  45,
 })
-VanillaTilt.init(document.querySelector("#page-header"), {
+VanillaTilt.init(document.querySelector(".header"), {
 	reverse: true,
 	max: 10,
 	speed: 400,
