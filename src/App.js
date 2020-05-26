@@ -2,6 +2,17 @@ import React, {Component} from 'react';
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    toggle: true,
+  }
+
+  toggle = () => {
+    this.setState({
+      toggle: !this.state.toggle
+    })
+  }
+
   render(){
     return (
       <div className="App">
@@ -14,7 +25,7 @@ class App extends Component {
                   <div className="container">
                     <div className="row">
                       <About title="About Me" description="I'm a full stack developer with knowledge of front end design, web programming languages, and database technologies. Proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express.js, React.js, Node.js)." personal="My passions outside of web development include music, films, photography, and politics." />
-                      <Contact title="Contact Me" email="ericheikkinen@gmail.com" github="yankidank" linkedin="finnished" resume="Heikkinen_Resume.pdf" />
+                      <Contact title="Contact" email="ericheikkinen@gmail.com" github="yankidank" linkedin="finnished" resume="Heikkinen_Resume.pdf" />
                     </div>
                     <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
                     <div className="row">
@@ -29,6 +40,11 @@ class App extends Component {
               </div>
             </div>
           </main>
+          <div className="page-divider"></div>
+          <div id="thenet" title="Ctrl+Shift">π</div>
+          <Footer email="eric@ericheikkinen.com" github="yankidank" linkedin="finnished" />
+          {/* {this.state.toggle && <p>Hello</p> }
+          <button onClick={this.toggle}>Toggle</button> */}
       </div>
     );
   }
@@ -154,6 +170,38 @@ class Projects extends Component {
           </div>
         </div>
       </div>
+    )
+  }
+}
+
+class Footer extends Component {
+  render(){
+    const { email, github, linkedin } = this.props;
+    const email_link = 'mailto:'+email;
+    const github_link = 'https://github.com/'+github;
+    const linkedin_link = 'https://www.linkedin.com/in/'+linkedin;
+   
+    return (      
+      <footer>
+        <div className="container">
+          <div className="row">
+            <div className="column">
+              <h2>Reach Out</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="footer-contact">
+              <div className="footer-inner-contact">
+                <div className="footer-contact-icons">
+                  <a href={email_link} title="Send me an Email 📧" rel="noopener noreferrer"><i className="icon icon_email"></i></a>
+                  <a href={github_link} title="Eric's GitHub Profile" target="_blank" rel="noopener noreferrer"><i className="icon icon_github"></i></a>
+                  <a href={linkedin_link} title="Eric's LinkedIn Profile" target="_blank" rel="noopener noreferrer"><i className="icon icon_linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     )
   }
 }

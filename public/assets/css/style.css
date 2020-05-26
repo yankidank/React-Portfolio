@@ -1,6 +1,9 @@
 :root {
 	font-size: 62.5%; /* 16px font size */
 }
+#root {
+	width:100%;
+}
 html {
 	font-family: 'Roboto', sans-serif;
 }
