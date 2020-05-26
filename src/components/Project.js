@@ -6,8 +6,8 @@ function Project(props) {
 	return (
 		<div>
 			{portfolio.map(item => (
-			<div className="row project-row">
-				<div className="column column-50" key={item.id}>
+			<div className="row project-row" key={item.id}>
+				<div className="column column-50">
 				<div className="projects_wrapper_left" >
 					<a href={item.url} target="_blank" rel="noopener noreferrer">
 					<img alt={item.title} title={item.title} src={item.image} />
