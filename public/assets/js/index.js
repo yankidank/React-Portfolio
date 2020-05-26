@@ -16,6 +16,13 @@ if (jQuery.browser.mobile){
 		perspective: 2000,
 		easing: "cubic-bezier(.03,.98,.52,.99)"
 	})
+	VanillaTilt.init(document.querySelector(".header"), {
+		reverse: true,
+		max: 10,
+		speed: 400,
+		startY: -45,
+		perspective: 500
+	});
 	// The Net
 	var map = {};
 	onkeydown = onkeyup = function(e){
@@ -25,34 +32,9 @@ if (jQuery.browser.mobile){
 			document.getElementById("thenet").innerHTML = "<a href='https://www.youtube.com/watch?v=pXPXMxsXT28' class='thenet' target='_blank' rel='noopener noreferrer'>π</a>";
 		}
 	}
-
-	// IntersectionObserver
-	const images = document.querySelectorAll('.projects_wrapper_left');
-	observer = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-			if (entry.intersectionRatio > 0) {
-				entry.target.classList.add('animate');
-			}
-		});
-	});
-	images.forEach(image => {
-		observer.observe(image);
-	});
 }
 
 // Tilt 
-VanillaTilt.init(document.querySelector(".header"), {
-	reverse: true,
-	max: 10,
-	speed: 400,
-	startY: -45,
-	perspective: 500,
-	gyroscope:   true,
-    gyroscopeMinAngleX: -45,
-    gyroscopeMaxAngleX:  45,
-    gyroscopeMinAngleY: -45,
-    gyroscopeMaxAngleY:  45
-});
 VanillaTilt.init(document.querySelector(".footer-contact"), {
 	reverse: true,
 	max: 8,
@@ -65,4 +47,17 @@ VanillaTilt.init(document.querySelector(".footer-contact"), {
     gyroscopeMaxAngleX:  55,
     gyroscopeMinAngleY: -55,
     gyroscopeMaxAngleY:  55
+});
+
+// IntersectionObserver
+const images = document.querySelectorAll('.projects_wrapper_left');
+observer = new IntersectionObserver((entries) => {
+	entries.forEach(entry => {
+		if (entry.intersectionRatio > 0) {
+			entry.target.classList.add('animate');
+		}
+	});
+});
+images.forEach(image => {
+	observer.observe(image);
 });
