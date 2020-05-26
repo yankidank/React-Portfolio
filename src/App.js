@@ -136,14 +136,14 @@ const portfolio = [
 class App extends Component {
 
   componentDidMount(){
+    const vanilla = document.createElement("script");
+    vanilla.src = "./assets/js/vanilla-tilt.min.js";
+    vanilla.async = true;
+    document.body.appendChild(vanilla);
     const script = document.createElement("script");
-    script.src = "./assets/js/vanilla-tilt.min.js";
+    script.src = "./assets/js/index.js";
     script.async = true;
     document.body.appendChild(script);
-    const script2 = document.createElement("script");
-    script2.src = "./assets/js/index.js";
-    script2.async = true;
-    document.body.appendChild(script2);
   }
 
   state = {
