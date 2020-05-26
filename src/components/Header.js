@@ -4,7 +4,7 @@ import "../styles/Header.css";
 function Header(props) {
 	const { title, description } = props;
 	return (
-		<header data-tilt-full-page-listening id="page-header" >
+		<header data-tilt-full-page-listening="true" id="page-header">
 			<div className="header">
 				<h1 className="page-title">{title}</h1>
 				<h3 className="page-description">{description}</h3>

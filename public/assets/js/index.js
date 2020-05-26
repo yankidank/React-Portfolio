@@ -1,8 +1,6 @@
-// Tilt
+// Tilt 
 VanillaTilt.init(document.querySelectorAll(".projects_wrapper_left"), {
 	reverse: true,
-/* 	glare: true,
-	"max-glare": 0.3,  */
 	max: 5,
 	scale: 1.06,
 	speed: 4000,
@@ -14,7 +12,6 @@ VanillaTilt.init(document.querySelectorAll(".projects_wrapper_left"), {
     gyroscopeMinAngleY: -45,
     gyroscopeMaxAngleY:  45,
 })
-
 VanillaTilt.init(document.querySelector("#page-header"), {
 	reverse: true,
 	max: 10,
@@ -22,11 +19,8 @@ VanillaTilt.init(document.querySelector("#page-header"), {
 	startY: -45,
 	perspective: 500,
 });
-
 VanillaTilt.init(document.querySelector(".footer-contact"), {
 	reverse: true,
-/* 	glare: true,
-	"max-glare": 0.4,  */
 	max: 8,
 	scale3d: (1, 1, 1),
 	scale: 1.25,
@@ -52,12 +46,12 @@ onkeydown = onkeyup = function(e){
 // IntersectionObserver
 const images = document.querySelectorAll('.projects_wrapper_left');
 observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
-	  entry.target.classList.add('animate');
-    }
-  });
+	entries.forEach(entry => {
+		if (entry.intersectionRatio > 0) {
+			entry.target.classList.add('animate');
+		}
+	});
 });
 images.forEach(image => {
-  observer.observe(image);
+	observer.observe(image);
 });
