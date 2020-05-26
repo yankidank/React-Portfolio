@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import './App.css';
-
+import Header from "./components/Header";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Project from "./components/Project";
+import Footer from "./components/Footer";
 
 const portfolio = [
   {
@@ -157,7 +162,7 @@ class App extends Component {
                         <h2>Projects</h2>
                       </div>
                     </div>
-                    <Projects cards={portfolio} />
+                    <Project cards={portfolio} />
                   </div>
                 </div>
                 <div className="column column-5"> </div>
@@ -174,159 +179,4 @@ class App extends Component {
   }
 }
 
-class Header extends Component {
-  render(){
-    const { title, description } = this.props;
-    return (
-      <header data-tilt-full-page-listening id="page-header" >
-       	<div className="header">
-          <h1 className="page-title">{title}</h1>
-          <h3 className="page-description">{description}</h3>
-        </div>
-      </header>
-    )
-  }
-}
-class About extends Component {
-  render(){
-    const { title, description, personal } = this.props;
-    return (
-      <div className="column column-75 aboutme">	
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <p>{personal}</p>
-      </div>
-    )
-  }
-}
-class Contact extends Component {
-  render(){
-    const { title, email, github, linkedin, resume } = this.props;
-    const email_link = 'mailto:'+email;
-    const github_link = 'https://github.com/'+github;
-    const linkedin_link = 'https://www.linkedin.com/in/'+linkedin;
-    const resume_link = ''+resume;
-    return (
-      <div className="column column-25 contact">	
-        <h2>{title}</h2> 
-        <div className="container">
-          <div className="row">
-            <div className="column">
-              <i className="icon icon_email"></i>
-              <a href={email_link} title="Send me an Email 📧">Email</a>
-            </div>
-          </div>
-          <div className="row">
-            <div className="column">
-              <i className="icon icon_github"></i>
-              <a href={github_link} title="GitHub Profile" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-          <div className="row">
-            <div className="column">
-              <i className="icon icon_noblock_linkedin"></i>
-              <a href={linkedin_link} title="LinkedIn Profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-          </div>
-          <div className="row">
-            <div className="column">
-              <i className="icon icon_resume"></i>
-              <a href={resume_link} title="Résumé" target="_blank" rel="noopener noreferrer">Resume</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
-}
-
-class Education extends Component {
-  render(){
-    const { title, school1, school1_description, school2, school2_description } = this.props;
-    return (
-      <div className="row">
-        <div className="column">
-          <div className="content_full education">
-            <h2>{title}</h2>
-            <div className="row">
-              <div className="column column-50">
-                <p className="eduSchool">{school1}</p>
-                <p className="eduDesc">{school1_description}</p>
-              </div>
-              <div className="column column-50">
-                <p className="eduSchool">{school2}</p>
-                <p className="eduDesc">{school2_description}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
-}
-
-class Projects extends Component {
-  render(){
-    return (
-      <div>
-        {portfolio.map(item => (
-          <div className="row project-row">
-            <div className="column column-50" key={item.id}>
-              <div className="projects_wrapper_left" >
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  <img alt={item.title} title={item.title} src={item.image} />
-                </a>
-              </div>
-            </div>
-            <div className="column column-50">
-              <div className="projects_wrapper_right">
-                <h3 className="project_title">{item.title}</h3>
-                <p className="project_tags"><em>{item.tags}</em></p>
-                <p className="project_description">{item.description}</p>
-                <div className="projects_buttons_wrapper">
-                  <a href={item.github} className="button button-blue" target="_blank" rel="noopener noreferrer">
-                    <i className="icon icon_github"></i>
-                    GitHub
-                  </a>			
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    )
-  }
-}
-
-class Footer extends Component {
-  render(){
-    const { email, github, linkedin } = this.props;
-    const email_link = 'mailto:'+email;
-    const github_link = 'https://github.com/'+github;
-    const linkedin_link = 'https://www.linkedin.com/in/'+linkedin;
-   
-    return (      
-      <footer>
-        <div className="container">
-          <div className="row">
-            <div className="column">
-              <h2>Reach Out</h2>
-            </div>
-          </div>
-          <div className="row">
-            <div className="footer-contact">
-              <div className="footer-inner-contact">
-                <div className="footer-contact-icons">
-                  <a href={email_link} title="Send me an Email 📧" rel="noopener noreferrer"><i className="icon icon_email"></i></a>
-                  <a href={github_link} title="Eric's GitHub Profile" target="_blank" rel="noopener noreferrer"><i className="icon icon_github"></i></a>
-                  <a href={linkedin_link} title="Eric's LinkedIn Profile" target="_blank" rel="noopener noreferrer"><i className="icon icon_linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    )
-  }
-}
 export default App;
