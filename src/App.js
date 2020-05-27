@@ -145,7 +145,6 @@ class App extends Component {
     script.async = true;
     document.body.appendChild(script);
   }
-
   render(){
     return (
       <div className="App">

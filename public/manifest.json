@@ -1,6 +1,7 @@
 {
   "short_name": "Eric Heikkinen",
   "name": "EricHeikkinen.com",
+  "description": "Full stack web developer portfolio React App",
   "icons": [
     {
       "src": "favicon.ico",
