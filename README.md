@@ -5,7 +5,7 @@ View a demo on my portfolio website: https://ericheikkinen.com
 ![EricHeikkinen.com](https://user-images.githubusercontent.com/18619/82945368-9fc6e180-9f51-11ea-9ab7-7d3a12438dba.jpg)
 
 
-## Setup
+# Setup
 
 Run `npm i` to install required node_modules
 
@@ -28,3 +28,11 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## PM2
+
+If your server doesn't have it yet, install PM2. Navigate to the root directory and run the following commands to keep the app running using PM2.
+
+```chmod +x server.sh```
+
+```npm run deploy```
