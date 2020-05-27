@@ -1,17 +1,11 @@
 import React from "react";
-import "../styles/Project.css";
+import "../styles/Portfolio.css";
 
-function Project(props) {
-	const id = parseInt(props.match.params.id);
-	function checkId(project) {
-		return project.id === id;
-	}
-	const project = props.cards.filter(checkId);
-
+function Portfolio(props) {
+	const portfolio = props.cards;
 	return (
 		<div>
-			<br />
-			{project.map(item => (
+			{portfolio.map(item => (
 			<div className="row project-row" key={item.id}>
 				<div className="column column-50">
 					<div className="projects_wrapper_left" >
@@ -38,4 +32,4 @@ function Project(props) {
 	);
 }
 
-export default Project;
+export default Portfolio;

@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
 import Education from './components/Education';
+import Portfolio from './components/Portfolio';
 import Project from './components/Project';
 import Footer from './components/Footer';
 
@@ -136,46 +138,69 @@ const portfolio = [
 class App extends Component {
 
   componentDidMount(){
+    const hostname = window.location.origin;
     const vanilla = document.createElement("script");
-    vanilla.src = "./assets/js/vanilla-tilt.min.js";
+    vanilla.src = hostname+"/assets/js/vanilla-tilt.min.js";
     vanilla.async = true;
     document.body.appendChild(vanilla);
     const script = document.createElement("script");
-    script.src = "./assets/js/index.js";
+    script.src = hostname+"/assets/js/index.js";
     script.async = true;
     document.body.appendChild(script);
   }
   render(){
     return (
-      <div className="App">
-          <Header title="Eric Heikkinen" description="Los Angeles • California" />
-          <main>
-            <div className="container">
-              <div className="row">
-                <div className="column column-5"> </div>
-                <div className="column column-90 wrapper main_content content_wrapper">	
-                  <div className="container">
-                    <div className="row">
-                      <About title="About Me" description="I'm a full stack developer with knowledge of front end design, web programming languages, and database technologies. Proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express.js, React.js, Node.js)." personal="My passions outside of web development include music, films, photography, and politics." />
-                      <Contact title="Contact" email={email} github={github} linkedin={linkedin} resume="Heikkinen_Resume.pdf" />
+      <Router>
+        <div className="App">
+            <Header title="Eric Heikkinen" description="Los Angeles • California" />
+            <main>
+              <div className="container">
+                <div className="row">
+                  <div className="column column-5"> </div>
+                  <div className="column column-90 wrapper main_content content_wrapper">	
+                    <div className="container">
+                      <Switch>
+                        <Route path="/about">
+                          <div className="row">
+                            <About title="About Me" description="I'm a full stack developer with knowledge of front end design, web programming languages, and database technologies. Proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express.js, React.js, Node.js)." personal="My passions outside of web development include music, films, photography, and politics." />
+                            <Contact title="Contact" email={email} github={github} linkedin={linkedin} resume="Heikkinen_Resume.pdf" />
+                          </div>
+                          <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
+                        </Route>
+                        <Route path="/portfolio">
+                          <div className="row">
+                            <div className="column">
+                              <h2>Projects</h2>
+                            </div>
+                          </div>
+                          <Portfolio cards={portfolio} />
+                        </Route>
+                        <Route path="/project/:id" render={(props) => <Project {...props} cards={portfolio} />}></Route>
+                        <Route path="/">
+                          <div className="row">
+                            <About title="About Me" description="I'm a full stack developer with knowledge of front end design, web programming languages, and database technologies. Proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express.js, React.js, Node.js)." personal="My passions outside of web development include music, films, photography, and politics." />
+                            <Contact title="Contact" email={email} github={github} linkedin={linkedin} resume="Heikkinen_Resume.pdf" />
+                          </div>
+                          <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
+                          <div className="row">
+                            <div className="column">
+                              <h2>Projects</h2>
+                            </div>
+                          </div>
+                          <Portfolio cards={portfolio} />
+                        </Route>
+                      </Switch>                      
                     </div>
-                    <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
-                    <div className="row">
-                      <div className="column">
-                        <h2>Projects</h2>
-                      </div>
-                    </div>
-                    <Project cards={portfolio} />
                   </div>
+                  <div className="column column-5"> </div>
                 </div>
-                <div className="column column-5"> </div>
               </div>
-            </div>
-          </main>
-          <div className="page-divider"></div>
-          <div id="thenet" title="Ctrl+Shift"></div>
-          <Footer email={email} github={github} linkedin={linkedin} />
-      </div>
+            </main>
+            <div className="page-divider"></div>
+            <div id="thenet" title="Ctrl+Shift"></div>
+            <Footer email={email} github={github} linkedin={linkedin} />
+        </div>
+      </Router>
     );
   }
 }
