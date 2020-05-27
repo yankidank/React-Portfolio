@@ -8,7 +8,7 @@ if (jQuery.browser.mobile){
 	// Mobile Device
 } else {
 	// Tilt
-	VanillaTilt.init(document.querySelectorAll(".projects_wrapper_left"), {
+	VanillaTilt.init(document.querySelectorAll(".portfolio-row div .projects_wrapper_left"), {
 		reverse: true,
 		max: 5,
 		scale: 1.05,
@@ -16,13 +16,6 @@ if (jQuery.browser.mobile){
 		perspective: 2000,
 		easing: "cubic-bezier(.03,.98,.52,.99)"
 	})
-	VanillaTilt.init(document.querySelector(".header"), {
-		reverse: true,
-		max: 10,
-		speed: 400,
-		startY: -45,
-		perspective: 500
-	});
 	// The Net
 	document.getElementById("thenet").innerHTML = "π";
 	var map = {};
@@ -36,6 +29,14 @@ if (jQuery.browser.mobile){
 }
 
 // Tilt 
+
+VanillaTilt.init(document.querySelector(".header"), {
+	reverse: true,
+	max: 10,
+	speed: 400,
+	startY: -45,
+	perspective: 500
+});
 VanillaTilt.init(document.querySelector(".footer-contact"), {
 	reverse: true,
 	max: 8,
@@ -62,3 +63,7 @@ observer = new IntersectionObserver((entries) => {
 images.forEach(image => {
 	observer.observe(image);
 });
+
+$('html, body').animate({
+	scrollTop: ($('.project-row').first().offset().top -75)
+},500);
