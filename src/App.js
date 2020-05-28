@@ -21,7 +21,11 @@ const portfolio = [
     url: "https://github.com/yankidank/pligg-cms",
     github: "https://github.com/yankidank/pligg-cms",
     preview: "",
-    image: "/assets/img/screens/pligg-home.jpg"
+    screens: [
+      "/assets/img/screens/pligg-home.jpg",
+      "/assets/img/screens/pligg2.jpg",
+      "/assets/img/screens/pligg3.jpg"
+    ]
   },
   {
     id: 2,
@@ -31,7 +35,9 @@ const portfolio = [
     url: "http://plague.site",
     github: "https://github.com/yankidank/covid-19-tracker",
     preview: "http://plague.site",
-    image: "/assets/img/screens/covid-19-tracker.jpg"
+    screens: [
+      "/assets/img/screens/covid-19-tracker.jpg"
+    ]
   },
   {
     id: 3,
@@ -41,7 +47,9 @@ const portfolio = [
     url: "https://johnsonandjohnsonohio.com/",
     github: "",
     preview: "https://johnsonandjohnsonohio.com/",
-    image: "/assets/img/screens/johnson.jpg"
+    screens: [
+      "/assets/img/screens/johnson.jpg"
+    ]
   },
   {
     id: 4,
@@ -51,7 +59,9 @@ const portfolio = [
     url: "https://yankidank.github.io/daily-agenda/",
     github: "https://github.com/yankidank/daily-agenda",
     preview: "https://yankidank.github.io/daily-agenda/",
-    image: "/assets/img/screens/daily-agenda.jpg"
+    screens: [
+      "/assets/img/screens/daily-agenda.jpg"
+    ]
   },
   {
     id: 5,
@@ -61,7 +71,9 @@ const portfolio = [
     url: "https://yankidank.github.io/TV-Tracker/index.html",
     github: "https://github.com/yankidank/TV-Tracker",
     preview: "https://yankidank.github.io/TV-Tracker/index.html",
-    image: "/assets/img/screens/track-tv.jpg"
+    screens: [
+      "/assets/img/screens/track-tv.jpg"
+    ]
   },
   {
     id: 6,
@@ -71,7 +83,9 @@ const portfolio = [
     url: "https://obscure-garden-30566.herokuapp.com/",
     github: "JavaScript · jQuery · Node.js · Express · MongoDB",
     preview: "https://obscure-garden-30566.herokuapp.com/",
-    image: "/assets/img/screens/workout.png"
+    screens: [
+      "/assets/img/screens/workout.png"
+    ]
   },
   {
     id: 7,
@@ -81,7 +95,9 @@ const portfolio = [
     url: "https://yankidank.github.io/weather/  ",
     github: "https://github.com/yankidank/weather",
     preview: "https://yankidank.github.io/weather/",
-    image: "/assets/img/screens/weather.jpg"
+    screens: [
+      "/assets/img/screens/weather.jpg"
+    ]
   },
   {
     id: 8,
@@ -91,7 +107,9 @@ const portfolio = [
     url: "https://yankidank.github.io/PasswordGenerator/",
     github: "https://github.com/yankidank/PasswordGenerator",
     preview: "https://yankidank.github.io/PasswordGenerator/",
-    image: "/assets/img/screens//password-generator.png"
+    screens: [
+      "/assets/img/screens//password-generator.png"
+    ]
   },
   {
     id: 9,
@@ -101,7 +119,9 @@ const portfolio = [
     url: "http://gasandoillaw.com/",
     github: "",
     preview: "http://gasandoillaw.com/",
-    image: "/assets/img/screens/gasandoil.jpg"
+    screens: [
+      "/assets/img/screens/gasandoil.jpg"
+    ]
   },
   {
     id: 10,
@@ -111,7 +131,9 @@ const portfolio = [
     url: "https://attorn.me/",
     github: "",
     preview: "https://attorn.me/",
-    image: "/assets/img/screens/attornme.jpg"
+    screens: [
+      "/assets/img/screens/attornme.jpg"
+    ]
   },
   {
     id: 11,
@@ -121,7 +143,9 @@ const portfolio = [
     url: "http://avalancheenergy.com/",
     github: "",
     preview: "http://avalancheenergy.com/",
-    image: "/assets/img/screens/avalanche.jpg"
+    screens: [
+      "/assets/img/screens/avalanche.jpg"
+    ]
   },
   {
     id: 12,
@@ -131,7 +155,9 @@ const portfolio = [
     url: "https://github.com/yankidank/egallery",
     github: "https://github.com/yankidank/egallery",
     preview: "",
-    image: "/assets/img/screens/egallery.jpg"
+    screens: [
+      "/assets/img/screens/egallery.jpg"
+    ]
   }
 ];
 

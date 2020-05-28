@@ -10,14 +10,14 @@ function Portfolio(props) {
 				<div className="row portfolio-row" key={item.id}>
 					<div className="column column-50">
 						<div className="projects_wrapper_left" >
-							<a href={hostname+'/project/'+item.id} target="_blank" rel="noopener noreferrer">
-								<img alt={item.title} title={item.title} src={item.image} />
+							<a href={hostname+'/project/'+item.id}>
+								<img alt={item.title} title={item.title} src={item.screens[0]} />
 							</a>
 						</div>
 					</div>
 					<div className="column column-50">
 						<div className="projects_wrapper_right">
-							<h3 className="project_title">{item.title}</h3>
+							<h3 className="project_title"><a href={hostname+'/project/'+item.id}>{item.title}</a></h3>
 							<p className="project_tags"><em>{item.tags}</em></p>
 							<p className="project_description">{item.description}</p>
 							<div className="projects_buttons_wrapper">

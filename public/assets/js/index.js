@@ -29,7 +29,6 @@ if (jQuery.browser.mobile){
 }
 
 // Tilt 
-
 VanillaTilt.init(document.querySelector(".header"), {
 	reverse: true,
 	max: 10,
@@ -52,7 +51,7 @@ VanillaTilt.init(document.querySelector(".footer-contact"), {
 });
 
 // IntersectionObserver
-const images = document.querySelectorAll('.projects_wrapper_left');
+const images = document.querySelectorAll('.portfolio-row div .projects_wrapper_left');
 observer = new IntersectionObserver((entries) => {
 	entries.forEach(entry => {
 		if (entry.intersectionRatio > 0) {
@@ -64,6 +63,25 @@ images.forEach(image => {
 	observer.observe(image);
 });
 
+// Scroll to project content
 $('html, body').animate({
 	scrollTop: ($('.project-row').first().offset().top -75)
 },500);
+
+// Swiper
+var mySwiper = new Swiper ('.swiper-container', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	// And if we need scrollbar
+	scrollbar: {
+		el: '.swiper-scrollbar',
+	},
+})

@@ -7,18 +7,28 @@ function Project(props) {
 		return project.id === id;
 	}
 	const project = props.cards.filter(checkId);
+	var images = [];
+	project.map(function(item){
+		for (var i = 0; i < item.screens.length; i++) {
+			var imgKey = 'img-'+i;
+			images.push(<div className="swiper-slide"><img alt={item.title} key={imgKey} title={item.title} src={item.screens[i]} /></div>);
+		}
+		return ''
+	})
 	return (
 		<div>
 			<br />
 			{project.map(item => (
 				<div className="row project-row" key={item.id}>
 					<div className="column">
-						<div className="projects_wrapper_left" >
-							<a href={item.url} target="_blank" rel="noopener noreferrer">
-								<img alt={item.title} title={item.title} src={item.image} />
-							</a>
+						<div className="swiper-container">
+							<div className="projects_wrapper_left swiper-wrapper" id="project_left">
+								{images}
+								<div className="swiper-button-prev"></div>
+								<div className="swiper-button-next"></div>
+							</div>
 						</div>
-						<div className="projects_wrapper_right">
+						<div className="projects_wrapper_right" id="project_right">
 							<h3 className="project_title">{item.title}</h3>
 							<p className="project_tags"><em>{item.tags}</em></p>
 							<p className="project_description">{item.description}</p>
