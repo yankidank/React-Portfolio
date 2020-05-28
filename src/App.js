@@ -24,7 +24,8 @@ const portfolio = [
     screens: [
       "/assets/img/screens/pligg-home.jpg",
       "/assets/img/screens/pligg2.jpg",
-      "/assets/img/screens/pligg3.jpg"
+      "/assets/img/screens/pligg4.jpg",
+      "/assets/img/screens/pligg-demo.jpg"
     ]
   },
   {
@@ -51,7 +52,10 @@ const portfolio = [
     github: "",
     preview: "https://johnsonandjohnsonohio.com/",
     screens: [
-      "/assets/img/screens/johnson.jpg"
+      "/assets/img/screens/johnson.jpg",
+      "/assets/img/screens/johnson-blog.jpg",
+      "/assets/img/screens/johnson-attorneys.jpg",
+      "/assets/img/screens/johnson-contact.jpg",
     ]
   },
   {
@@ -63,7 +67,8 @@ const portfolio = [
     github: "https://github.com/yankidank/daily-agenda",
     preview: "https://yankidank.github.io/daily-agenda/",
     screens: [
-      "/assets/img/screens/daily-agenda.jpg"
+      "/assets/img/screens/daily-agenda.jpg",
+      "/assets/img/screens/daily-agenda-golden.jpg"
     ]
   },
   {
@@ -75,7 +80,8 @@ const portfolio = [
     github: "https://github.com/yankidank/TV-Tracker",
     preview: "https://yankidank.github.io/TV-Tracker/index.html",
     screens: [
-      "/assets/img/screens/track-tv.jpg"
+      "/assets/img/screens/track-tv.jpg",
+      "/assets/img/screens/track-tv-search.jpg"
     ]
   },
   {
@@ -123,7 +129,8 @@ const portfolio = [
     github: "",
     preview: "http://gasandoillaw.com/",
     screens: [
-      "/assets/img/screens/gasandoil.jpg"
+      "/assets/img/screens/gasandoil.jpg",
+      "/assets/img/screens/gasandoil-blog.jpg"
     ]
   },
   {
