@@ -8,3 +8,9 @@
 	margin-left:2rem;
 	margin-right:2rem;
 }
+.swiper-button-prev {
+	left:25px;
+}
+.swiper-button-next {
+	right:25px;
+}

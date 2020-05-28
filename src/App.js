@@ -36,7 +36,10 @@ const portfolio = [
     github: "https://github.com/yankidank/covid-19-tracker",
     preview: "http://plague.site",
     screens: [
-      "/assets/img/screens/covid-19-tracker.jpg"
+      "/assets/img/screens/covid-19-tracker.jpg",
+      "/assets/img/screens/covid-19-tracker4.jpg",
+      "/assets/img/screens/covid-19-tracker3.jpg",
+      "/assets/img/screens/covid-19-tracker2.jpg"
     ]
   },
   {

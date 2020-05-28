@@ -8,10 +8,11 @@ function Project(props) {
 	}
 	const project = props.cards.filter(checkId);
 	var images = [];
+
 	project.map(function(item){
 		for (var i = 0; i < item.screens.length; i++) {
 			var imgKey = 'img-'+i;
-			images.push(<div className="swiper-slide"><img alt={item.title} key={imgKey} title={item.title} src={item.screens[i]} /></div>);
+			images.push(<div key={imgKey} className="swiper-slide"><img alt={item.title} title={item.title} src={item.screens[i]} /></div>);
 		}
 		return ''
 	})
@@ -22,10 +23,10 @@ function Project(props) {
 				<div className="row project-row" key={item.id}>
 					<div className="column">
 						<div className="swiper-container">
+							<div className="swiper-button-prev"></div>
+							<div className="swiper-button-next"></div>
 							<div className="projects_wrapper_left swiper-wrapper" id="project_left">
 								{images}
-								<div className="swiper-button-prev"></div>
-								<div className="swiper-button-next"></div>
 							</div>
 						</div>
 						<div className="projects_wrapper_right" id="project_right">
