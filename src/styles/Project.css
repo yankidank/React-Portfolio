@@ -8,9 +8,26 @@
 	margin-left:2rem;
 	margin-right:2rem;
 }
+.project-row {
+	margin-top:10px;
+}
+.projects_wrapper_left img {
+	width: 100%;
+}
+.swiper-slide {
+	width:100%;
+}
 .swiper-button-prev {
-	left:25px;
+	left:2%;
 }
 .swiper-button-next {
-	right:25px;
+	right:2%;
+}
+@media only screen and (max-width: 640px) {
+	.swiper-button-prev {
+		left:2%;
+	}
+	.swiper-button-next {
+		right:2%;
+	}
 }

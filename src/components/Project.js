@@ -27,7 +27,6 @@ function Project(props) {
 	}
 	return (
 		<div>
-			<br />
 			{project.map(item => (
 				<div className="row project-row" key={item.id}>
 					<div className="column">
