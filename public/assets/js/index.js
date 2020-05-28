@@ -75,7 +75,14 @@ $(document).ready(function () {
 		// Optional parameters
 		direction: 'horizontal',
 		loop: true,
+		speed:250,
 		slidesPerView:'auto',
+		visibilityFullFit: true,
+		autoResize: true,
+		cssWidthAndHeight: true,
+		spaceBetween: 10,
+		grabCursor: true,
+		touchEventsTarget: 'swiper-container',
 		
 		// Navigation arrows
 		navigation: {
