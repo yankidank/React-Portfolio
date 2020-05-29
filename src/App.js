@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
+import Skills from './components/Skills';
 import Education from './components/Education';
 import Portfolio from './components/Portfolio';
 import Project from './components/Project';
@@ -202,6 +203,7 @@ class App extends Component {
                             <Contact title="Contact" email={email} github={github} linkedin={linkedin} resume="Heikkinen_Resume.pdf" />
                           </div>
                           <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
+                          <Skills />
                         </Route>
                         <Route path="/portfolio">
                           <div className="row">
@@ -218,6 +220,7 @@ class App extends Component {
                             <Contact title="Contact" email={email} github={github} linkedin={linkedin} resume="Heikkinen_Resume.pdf" />
                           </div>
                           <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
+                          <Skills />                         
                           <div className="row">
                             <div className="column">
                               <h2>Projects</h2>
