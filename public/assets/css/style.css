@@ -93,6 +93,10 @@ a.button.button-outline:hover {
 	background-color: rgb(47, 108, 223);
     border-color: rgb(47, 108, 223);
 }
+.button-blue:hover {
+	background-color: rgb(33, 87, 189);
+	border-color: rgb(33, 87, 189);
+}
 i.icon {
 	width: 24px;
     height: 24px;
