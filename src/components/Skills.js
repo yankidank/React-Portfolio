@@ -27,6 +27,7 @@ function Skills(props) {
 						<li>PHP</li>
 						<li>REST API</li>
 						<li>PWA</li>
+						<li>Figma</li>
 						<li>Webpack</li>
 						<li>CSS</li>
 						<li>HTML</li>

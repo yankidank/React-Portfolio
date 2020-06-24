@@ -30,6 +30,22 @@ const portfolio = [
     ]
   },
   {
+    id: 13,
+    title: "Codify Job Application Management",
+    description: "Stay organized throughout your job hunt. Create an account on the Codify app to begin tracking job posts, applications, contacts, interviews, and offers.",
+    tags: "MongoDB · Express · React · Node.js · JavaScript · CSS",
+    url: "https://codify-jobs.herokuapp.com/",
+    github: "https://github.com/yankidank/Codify",
+    preview: "https://codify-jobs.herokuapp.com/",
+    screens: [
+      "/assets/img/screens/codify-jobs-list.jpg",
+      "/assets/img/screens/codify-home.jpg",
+      "/assets/img/screens/codify-job-detail.jpg",
+      "/assets/img/screens/codify-dashboard.jpg",
+      "/assets/img/screens/codify-login.jpg",
+    ]
+  },
+  {
     id: 2,
     title: "Covid-19 Tracker",
     description: "The Covid-19 Tracker project uses APIs and other data sources to visualize the spread and impact of Covid-19 across the globe using a heatmap. Users can subscribe to a newsletter containing the latest information about the spread of the virus.",
