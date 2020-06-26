@@ -3,10 +3,10 @@ ul.skill-list {
 }
 ul.skill-list li {
 	display: inline-block;
-    border: 1px solid #dfdbdb;
-    padding: 8px 10px;
-    margin: 0 5px 5px 0;
-    font-size: 1.2rem;
+	border: 1px solid #dfdbdb;
+	padding: 8px 10px;
+	margin: 0 5px 5px 0;
+	font-size: 1.2rem;
 	cursor: default;
 	color:rgb(105, 105, 105);
 }
