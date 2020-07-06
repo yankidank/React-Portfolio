@@ -34,9 +34,9 @@ const portfolio = [
     title: "Codify Job Application Management",
     description: "Stay organized throughout your job hunt. Create an account on the Codify app to begin tracking job posts, applications, contacts, interviews, and offers.",
     tags: "MongoDB · Express · React · Node.js · JavaScript · CSS",
-    url: "https://codify-jobs.herokuapp.com/",
+    url: "https://codify.works/",
     github: "https://github.com/yankidank/Codify",
-    preview: "https://codify-jobs.herokuapp.com/",
+    preview: "https://codify.works/",
     screens: [
       "/assets/img/screens/codify-jobs-list.jpg",
       "/assets/img/screens/codify-home.jpg",
