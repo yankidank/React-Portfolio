@@ -10,7 +10,7 @@ import Portfolio from './components/Portfolio';
 import Project from './components/Project';
 import Footer from './components/Footer';
 
-const email = 'eric@ericheikkinen.com';
+const email = 'ericheikkinen@gmail.com';
 const github = 'yankidank';
 const linkedin = 'finnished';
 const portfolio = [
@@ -38,7 +38,6 @@ const portfolio = [
     github: "https://github.com/yankidank/Codify",
     preview: "https://codify.works/",
     screens: [
-      "/assets/img/screens/codify-jobs-list.jpg",
       "/assets/img/screens/codify-home.jpg",
       "/assets/img/screens/codify-job-detail.jpg",
       "/assets/img/screens/codify-dashboard.jpg",
