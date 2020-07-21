@@ -214,10 +214,26 @@ class App extends Component {
                       <Switch>
                         <Route path="/about">
                           <div className="row">
-                            <About title="About Me" description="I'm a full stack developer with knowledge of front end design, web programming languages, and database technologies. Proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express.js, React.js, Node.js)." personal="My passions outside of web development include music, films, photography, and politics." />
-                            <Contact title="Contact" email={email} github={github} linkedin={linkedin} resume="Heikkinen_Resume.pdf" />
+                            <About 
+                              title="About Me" 
+                              description="I'm a Full Stack developer specializing in Front-End UI/UX design. I hold a Bachelor of Fine Arts from SCAD and a certificate in Full Stack Web Development through UCLA Extension. Technically proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express, React, Node). Founded and developed the popular open source project Pligg CMS." 
+                              personal="My passions outside of web development include music, photography, travel, finance, and politics." 
+                            />
+                            <Contact 
+                              title="Contact" 
+                              resume="Heikkinen_Resume.pdf" 
+                              email={email} 
+                              github={github} 
+                              linkedin={linkedin} 
+                            />
                           </div>
-                          <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
+                          <Education 
+                            title="Education" 
+                            school1="UCLA Extension Coding Bootcamp" 
+                            school1_description="Full Stack Web Development" 
+                            school2="Savannah College of Art and Design" 
+                            school2_description="B.F.A. Film and Television Production" 
+                          />
                           <Skills />
                         </Route>
                         <Route path="/portfolio">
@@ -231,8 +247,18 @@ class App extends Component {
                         <Route path="/project/:id" render={(props) => <Project {...props} cards={portfolio} />}></Route>
                         <Route path="/">
                           <div className="row">
-                            <About title="About Me" description="I'm a full stack developer with knowledge of front end design, web programming languages, and database technologies. Proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express.js, React.js, Node.js)." personal="My passions outside of web development include music, films, photography, and politics." />
-                            <Contact title="Contact" email={email} github={github} linkedin={linkedin} resume="Heikkinen_Resume.pdf" />
+                            <About 
+                              title="About Me" 
+                              description="I'm a Full Stack developer specializing in Front-End UI/UX design. I hold a Bachelor of Fine Arts from SCAD and a certificate in Full Stack Web Development through UCLA Extension. Technically proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express, React, Node). Founded and developed the popular open source project Pligg CMS." 
+                              personal="My passions outside of web development include music, photography, travel, finance, and politics." 
+                            />
+                            <Contact 
+                              title="Contact" 
+                              resume="Heikkinen_Resume.pdf" 
+                              email={email} 
+                              github={github} 
+                              linkedin={linkedin} 
+                            />
                           </div>
                           <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
                           <Skills />                         
