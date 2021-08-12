@@ -7,15 +7,6 @@
 if (jQuery.browser.mobile){
 	// Mobile Device
 } else {
-	// Tilt
-	VanillaTilt.init(document.querySelectorAll(".portfolio-row div .projects_wrapper_left"), {
-		reverse: true,
-		max: 5,
-		scale: 1.05,
-		speed: 4000,
-		perspective: 2000,
-		easing: "cubic-bezier(.03,.98,.52,.99)"
-	})
 	// The Net
 	document.getElementById("thenet").innerHTML = "π";
 	var map = {};
@@ -27,28 +18,6 @@ if (jQuery.browser.mobile){
 		}
 	}
 }
-
-// Tilt 
-VanillaTilt.init(document.querySelector(".header"), {
-	reverse: true,
-	max: 10,
-	speed: 400,
-	startY: -45,
-	perspective: 500
-});
-VanillaTilt.init(document.querySelector(".footer-contact"), {
-	reverse: true,
-	max: 8,
-	scale3d: (1, 1, 1),
-	scale: 1.25,
-	speed: 4000,
-	easing: "cubic-bezier(.07,.98,.52,.99)",
-	gyroscope:   true,
-    gyroscopeMinAngleX: -55,
-    gyroscopeMaxAngleX:  55,
-    gyroscopeMinAngleY: -55,
-    gyroscopeMaxAngleY:  55
-});
 
 // IntersectionObserver
 const images = document.querySelectorAll('.portfolio-row div .projects_wrapper_left');
