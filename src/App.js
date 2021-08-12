@@ -10,9 +10,39 @@ import Portfolio from './components/Portfolio';
 import Project from './components/Project';
 import Footer from './components/Footer';
 
+import ScreenPliggHome from './img/screens/pligg-home.jpg';
+import ScreenPligg2 from './img/screens/pligg2.jpg';
+import ScreenPligg4 from './img/screens/pligg4.jpg';
+import ScreenPliggDemo from './img/screens/pligg-demo.jpg';
+import ScreenCodifyHome from './img/screens/codify-home.jpg';
+import ScreenCodifyJobDetail from './img/screens/codify-job-detail.jpg';
+import ScreenCodifyDashboard from './img/screens/codify-dashboard.jpg';
+import ScreenCodifyLogin from './img/screens/codify-login.jpg';
+import ScreenCovid1 from './img/screens/covid-19-tracker.jpg';
+import ScreenCovid2 from './img/screens/covid-19-tracker2.jpg';
+import ScreenCovid3 from './img/screens/covid-19-tracker3.jpg';
+import ScreenCovid4 from './img/screens/covid-19-tracker4.jpg';
+import ScreenJohnson from './img/screens/johnson.jpg';
+import ScreenJohnsonBlog from './img/screens/johnson-blog.jpg';
+import ScreenJohnsonAttorneys from './img/screens/johnson-attorneys.jpg';
+import ScreenJohnsonContact from './img/screens/johnson-contact.jpg';
+import ScreenAgenda from './img/screens/daily-agenda.jpg';
+import ScreenAgendaGolden from './img/screens/daily-agenda-golden.jpg';
+import ScreenTrackTv from './img/screens/track-tv.jpg';
+import ScreenTrackTvSearch from './img/screens/track-tv-search.jpg';
+import ScreenWorkout from './img/screens/workout.png';
+import ScreenWeather from './img/screens/weather.png';
+import ScreenPasswordGenerator from './img/screens/password-generator.png';
+import ScreenGasandoil from './img/screens/gasandoil.jpg';
+import ScreenGasandoilBlog from './img/screens/gasandoil-blog.jpg';
+import ScreenAttornme from './img/screens/attornme.jpg';
+import ScreenAvalanche from './img/screens/avalanche.jpg';
+import ScreenEgallery from './img/screens/egallery.jpg';
+
 const email = 'ericheikkinen@gmail.com';
 const github = 'yankidank';
 const linkedin = 'finnished';
+
 const portfolio = [
   {
     id: 1,
@@ -23,10 +53,10 @@ const portfolio = [
     github: "https://github.com/yankidank/pligg-cms",
     preview: "",
     screens: [
-      "/assets/img/screens/pligg-home.jpg",
-      "/assets/img/screens/pligg2.jpg",
-      "/assets/img/screens/pligg4.jpg",
-      "/assets/img/screens/pligg-demo.jpg"
+      ScreenPliggHome,
+      ScreenPligg2,
+      ScreenPligg4,
+      ScreenPliggDemo
     ]
   },
   {
@@ -38,10 +68,10 @@ const portfolio = [
     github: "https://github.com/yankidank/Codify",
     preview: "https://codify.works/",
     screens: [
-      "/assets/img/screens/codify-home.jpg",
-      "/assets/img/screens/codify-job-detail.jpg",
-      "/assets/img/screens/codify-dashboard.jpg",
-      "/assets/img/screens/codify-login.jpg",
+      ScreenCodifyHome,
+      ScreenCodifyJobDetail,
+      ScreenCodifyDashboard,
+      ScreenCodifyLogin 
     ]
   },
   {
@@ -53,10 +83,10 @@ const portfolio = [
     github: "https://github.com/yankidank/covid-19-tracker",
     preview: "http://plague.site",
     screens: [
-      "/assets/img/screens/covid-19-tracker.jpg",
-      "/assets/img/screens/covid-19-tracker4.jpg",
-      "/assets/img/screens/covid-19-tracker3.jpg",
-      "/assets/img/screens/covid-19-tracker2.jpg"
+      ScreenCovid1,
+      ScreenCovid2,
+      ScreenCovid3,
+      ScreenCovid4
     ]
   },
   {
@@ -68,10 +98,10 @@ const portfolio = [
     github: "",
     preview: "https://johnsonandjohnsonohio.com/",
     screens: [
-      "/assets/img/screens/johnson.jpg",
-      "/assets/img/screens/johnson-blog.jpg",
-      "/assets/img/screens/johnson-attorneys.jpg",
-      "/assets/img/screens/johnson-contact.jpg",
+      ScreenJohnson,
+      ScreenJohnsonBlog,
+      ScreenJohnsonAttorneys,
+      ScreenJohnsonContact
     ]
   },
   {
@@ -83,8 +113,8 @@ const portfolio = [
     github: "https://github.com/yankidank/daily-agenda",
     preview: "https://yankidank.github.io/daily-agenda/",
     screens: [
-      "/assets/img/screens/daily-agenda.jpg",
-      "/assets/img/screens/daily-agenda-golden.jpg"
+      ScreenAgenda,
+      ScreenAgendaGolden
     ]
   },
   {
@@ -96,8 +126,8 @@ const portfolio = [
     github: "https://github.com/yankidank/TV-Tracker",
     preview: "https://yankidank.github.io/TV-Tracker/index.html",
     screens: [
-      "/assets/img/screens/track-tv.jpg",
-      "/assets/img/screens/track-tv-search.jpg"
+      ScreenTrackTv,
+      ScreenTrackTvSearch
     ]
   },
   {
@@ -109,7 +139,7 @@ const portfolio = [
     github: "JavaScript · jQuery · Node.js · Express · MongoDB",
     preview: "https://obscure-garden-30566.herokuapp.com/",
     screens: [
-      "/assets/img/screens/workout.png"
+      ScreenWorkout
     ]
   },
   {
@@ -121,7 +151,7 @@ const portfolio = [
     github: "https://github.com/yankidank/weather",
     preview: "https://yankidank.github.io/weather/",
     screens: [
-      "/assets/img/screens/weather.jpg"
+      ScreenWeather
     ]
   },
   {
@@ -133,7 +163,7 @@ const portfolio = [
     github: "https://github.com/yankidank/PasswordGenerator",
     preview: "https://yankidank.github.io/PasswordGenerator/",
     screens: [
-      "/assets/img/screens//password-generator.png"
+      ScreenPasswordGenerator
     ]
   },
   {
@@ -145,8 +175,8 @@ const portfolio = [
     github: "",
     preview: "http://gasandoillaw.com/",
     screens: [
-      "/assets/img/screens/gasandoil.jpg",
-      "/assets/img/screens/gasandoil-blog.jpg"
+      ScreenGasandoil,
+      ScreenGasandoilBlog
     ]
   },
   {
@@ -158,7 +188,7 @@ const portfolio = [
     github: "",
     preview: "https://attorn.me/",
     screens: [
-      "/assets/img/screens/attornme.jpg"
+      ScreenAttornme
     ]
   },
   {
@@ -170,7 +200,7 @@ const portfolio = [
     github: "",
     preview: "http://avalancheenergy.com/",
     screens: [
-      "/assets/img/screens/avalanche.jpg"
+      ScreenAvalanche
     ]
   },
   {
@@ -182,7 +212,7 @@ const portfolio = [
     github: "https://github.com/yankidank/egallery",
     preview: "",
     screens: [
-      "/assets/img/screens/egallery.jpg"
+      ScreenEgallery
     ]
   }
 ];
@@ -192,11 +222,11 @@ class App extends Component {
   componentDidMount(){
     const hostname = window.location.origin;
     const vanilla = document.createElement("script");
-    vanilla.src = hostname+"/assets/js/vanilla-tilt.min.js";
+    vanilla.src = hostname+"./assets/js/vanilla-tilt.min.js";
     vanilla.async = true;
     document.body.appendChild(vanilla);
     const script = document.createElement("script");
-    script.src = hostname+"/assets/js/index.js";
+    script.src = hostname+"./assets/js/index.js";
     script.async = true;
     document.body.appendChild(script);
   }

@@ -17,7 +17,7 @@
 	width: 30px;
 	height:30px;
 	margin-top:3px;
-	background-image: url('/assets/img/icon/github.png');
+	background-image: url('./../img/icon/github.png');
 	background-size: 30px;
 }
 .projects_buttons_wrapper a i.icon_preview {
@@ -26,7 +26,7 @@
 	margin-top: 10px;
 	margin-right: 11px;
 	margin-left:-5px;
-	background-image: url('/assets/img/icon/external-link-alt.png');
+	background-image: url('./../img/icon/external-link-alt.png');
 	background-size: 15px;
 }
 h3.project_title a {

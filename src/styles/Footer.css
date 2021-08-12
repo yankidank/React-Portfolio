@@ -1,8 +1,7 @@
 
 footer {
-	background-image:url('/assets/img/background.jpg');
 	width:100%;
-	background-color:#000;
+	background-color:rgba(29, 29, 29, 0.95);
 	height:600px;
 	background-position: bottom;
 	background-attachment: fixed;
@@ -35,7 +34,7 @@ footer .container .row h2 {
 	text-align:center;
 	margin:50px auto 3rem auto;
 	transform-style: preserve-3d;
-	background: url('/assets/img/profile.jpg') no-repeat;
+	background: url('./../img/profile.jpg') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	border: 3px solid #fff;
@@ -65,13 +64,13 @@ footer .container .row h2 {
 	width:55px;
 }
 .footer-contact-icons a i.icon_email {
-	background-image: url('/assets/img/icon/envelope-white.png');
+	background-image: url('./../img/icon/envelope-white.png');
 	background-size:30px;
 	margin-top:1px;
 }
 .footer-contact-icons a i.icon_github {
-	background-image: url('/assets/img/icon/github.png');
+	background-image: url('./../img/icon/github.png');
 }
 .footer-contact-icons a i.icon_linkedin {
-	background-image: url('/assets/img/icon/linkedin-white.png');
+	background-image: url('./../img/icon/linkedin-white.png');
 }
