@@ -1,3 +1,8 @@
+/* Headlines */
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: unset;
+}
+
 /* Buttons */
 a.button.button-outline {
 	color:#000;

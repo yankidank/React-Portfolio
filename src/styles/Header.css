@@ -3,6 +3,8 @@ header h1 {
 	margin:0 0 0 0;
 	font-family: 'Alegreya Sans', Helvetica, sans-serif;
 	font-size:7rem;
+	line-height: 1;
+	letter-spacing: -.1rem;
 }
 header h1.page-title a {
 	color:#fff;
