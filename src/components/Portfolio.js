@@ -5,22 +5,22 @@ import "../styles/Portfolio.css";
 function Portfolio(props) {
 	const portfolio = props.cards;
 
-	function animateImageOn(inView, id) {
+	function intersectionView(inView, id) {
 		const imageView = document.getElementById( id );
-		if (inView){
+		if (inView && imageView.classList[0] !== 'animate' && imageView.classList[0] !== 'inView'){
 			imageView.classList.add('animate');
 		} else if (imageView.classList[0] === 'animate'){
 			imageView.classList.remove('animate');
 			imageView.classList.add('inView');
-		} else {
-			imageView.classList.add('animate');
+		} else if (!inView) {
+			imageView.classList.remove('animate');
 		}
 	}
 
 	return (
 		<div>
 			{portfolio.map(item => (
-				<InView as="div" onChange={(inView) => animateImageOn(inView, item.id) } key={item.id}>		
+				<InView as="div" onChange={(inView) => intersectionView(inView, item.id) } key={item.id}>		
 					<div className="row portfolio-row">
 						<div className="column column-50">
 							<div className="projects_wrapper_left" >
