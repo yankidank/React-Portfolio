@@ -11,7 +11,6 @@ function Footer(props) {
 
 	function intersectionView(inView) {
 		const imageView = document.getElementById('footer_container');
-		console.log(imageView)
 		if (inView && imageView.classList[1] !== 'animate' && imageView.classList[1] !== 'inView'){
 			imageView.classList.add('animate');
 		} else if (imageView.classList[1] === 'animate'){
