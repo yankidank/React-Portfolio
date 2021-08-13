@@ -128,24 +128,3 @@ i {
 		transform:         translateY(-4px)
 	}
 }
-#thenet a {
-	color:#fff;
-}
-#thenet {
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-timing-function: ease-in-out;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-	color: white;
-	bottom: 3px;
-	right: 10px;
-    position: fixed;
-}
-#thenet:hover {
-	animation-name: bounce;
-	-moz-animation-name: bounce;
-}

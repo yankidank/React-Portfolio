@@ -330,7 +330,6 @@ class App extends Component {
               </div>
             </main>
             <div className="page-divider"></div>
-            <div id="thenet" title="Ctrl+Shift"></div>
             <Footer email={email} github={github} linkedin={linkedin} />
         </div>
       </Router>
