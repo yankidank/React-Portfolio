@@ -45,23 +45,5 @@ i.icon {
 	background-repeat: no-repeat;
 	background-position: center;
 	float: left;
-}
-.icon_email {
-	background-image: url('../img/icon/envelope.svg');
-	background-size: 14px;
-}
-.icon_github {
-	background-image: url('../img/icon/github.svg');
-	background-size: 26px;
-}
-.icon_preview {
-	background-image: url('../img/icon/external-link-alt.svg');
-}
-.icon_noblock_linkedin {
-	background-image: url('../img/icon/linkedin.svg');
-	background-size: 24px;
-}
-.icon_resume {
-	background-image: url('../img/icon/file-alt.svg');
-	background-size: 12px;
+	opacity: 0.75;
 }
