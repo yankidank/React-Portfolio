@@ -11,20 +11,10 @@
 .project-row {
 	margin-top:15px;
 }
-.swiper-slide {
-	width:100%;
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom:24px;
 }
-.swiper-button-prev {
-	left:2%;
-}
-.swiper-button-next {
-	right:2%;
-}
-@media only screen and (max-width: 640px) {
-	.swiper-button-prev {
-		left:2%;
-	}
-	.swiper-button-next {
-		right:2%;
-	}
+.swiper-pagination-bullet {
+	width:9px;
+	height:9px;
 }

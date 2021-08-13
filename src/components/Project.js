@@ -1,11 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {Pagination} from 'swiper/core';  
+import SwiperCore, {Autoplay, Pagination} from 'swiper/core';  
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "../styles/Project.css";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Autoplay, Pagination]);
 
 function Project(props) {
 	const id = parseInt(props.match.params.id);
@@ -37,7 +37,7 @@ function Project(props) {
 				<div className="row project-row" key={item.id}>
 					<div className="column">
 						<div className="projects_wrapper_left" id="project_left">
-							{slideControl() ? <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{"clickable": true}} className="swiper-wrapper">{images}</Swiper> : <div>{images}</div> }
+							{slideControl() ? <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{"clickable": true}} autoplay={{ "delay": 5000, "disableOnInteraction": false }} className="swiper-wrapper">{images}</Swiper> : <div>{images}</div> }
 						</div>
 						<div className="projects_wrapper_right" id="project_right">
 							<h3 className="project_title">{item.title}</h3>
