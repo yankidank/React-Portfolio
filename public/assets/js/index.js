@@ -19,19 +19,6 @@ if (jQuery.browser.mobile){
 	}
 }
 
-// IntersectionObserver
-const images = document.querySelectorAll('.portfolio-row div .projects_wrapper_left');
-observer = new IntersectionObserver((entries) => {
-	entries.forEach(entry => {
-		if (entry.intersectionRatio > 0) {
-			entry.target.classList.add('animate');
-		}
-	});
-});
-images.forEach(image => {
-	observer.observe(image);
-});
-
 // Scroll to project content
 $('html, body').animate({
 	scrollTop: ($('.project-row').first().offset().top -75)
