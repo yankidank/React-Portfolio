@@ -138,7 +138,7 @@ const portfolio = [
     tags: "JavaScript · jQuery · Node.js · Express · MongoDB",
     description: "Create a workout plan, add exercises, and manage routines.",
     url: "https://obscure-garden-30566.herokuapp.com/",
-    github: "JavaScript · jQuery · Node.js · Express · MongoDB",
+    github: "https://github.com/yankidank/workout",
     preview: "https://obscure-garden-30566.herokuapp.com/",
     screens: [
       ScreenWorkout
