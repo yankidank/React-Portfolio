@@ -269,8 +269,8 @@ class App extends Component {
                           <div className="row">
                             <About 
                               title="About Me" 
-                              description="I'm a Full Stack developer specializing in Front-End UI/UX design. I hold a Bachelor of Fine Arts from SCAD and a certificate in Full Stack Web Development through UCLA Extension. Technically proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express, React, Node). Founded and developed the popular open source project Pligg CMS." 
-                              personal="My passions outside of web development include music, photography, travel, finance, and politics." 
+                              description="I'm a Full Stack developer specializing in UI/UX design. I hold a Bachelor of Fine Arts from Savannah College of Art and Design and a certificate in Full Stack Web Development from UCLA Extension. Technically proficient with both MERN (MongoDB, Express, React, Node) and LAMP (Linux, Apache, MySQL, PHP) stacks. Founded and developed the popular open source project Pligg CMS." 
+                              personal="My interests outside of web development include music, photography, travel, finance, and politics." 
                             />
                             <Contact 
                               title="Contact" 
@@ -302,8 +302,8 @@ class App extends Component {
                           <div className="row">
                             <About 
                               title="About Me" 
-                              description="I'm a Full Stack developer specializing in Front-End UI/UX design. I hold a Bachelor of Fine Arts from SCAD and a certificate in Full Stack Web Development through UCLA Extension. Technically proficient with both the LAMP (Linux, Apache, MySQL, PHP) and MERN stacks (MongoDB, Express, React, Node). Founded and developed the popular open source project Pligg CMS." 
-                              personal="My passions outside of web development include music, photography, travel, finance, and politics." 
+                              description="I'm a Full Stack developer specializing in UI/UX design. I hold a Bachelor of Fine Arts from Savannah College of Art and Design and a certificate in Full Stack Web Development from UCLA Extension. Technically proficient with both MERN (MongoDB, Express, React, Node) and LAMP (Linux, Apache, MySQL, PHP) stacks. Founded and developed the popular open source project Pligg CMS." 
+                              personal="My interests outside of web development include music, photography, travel, finance, and politics." 
                             />
                             <Contact 
                               title="Contact" 

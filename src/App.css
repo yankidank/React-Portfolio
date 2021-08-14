@@ -4,8 +4,11 @@
 #root {
 	width:100%;
 }
-html {
-	font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6, p, ul {
+	font-family: 'Hind Madurai', sans-serif;
+}
+p {
+	font-weight:300;
 }
 body {
 	background: linear-gradient(-45deg, #a33ce7, #387cca, #2db190d2, #3a54e7);
@@ -17,6 +20,7 @@ body {
 	place-items: center;
 	color:#444;
 	font-size:1.5rem;
+
 }
 @keyframes gradientBG {
 	0% {
@@ -38,7 +42,8 @@ a:visited,a:hover {
 }
 h2 {
 	color:#222;
-	font-size:3.0rem;
+	font-weight:400;
+	font-size:2.6rem;
 }
 .clear {
 	clear:both;

@@ -11,7 +11,6 @@
 	margin-top: 2px;
 	margin-right:5px;
 	margin-left: -16px;
-  font-family: 'Alegreya Sans', Helvetica, sans-serif;
 }
 .projects_buttons_wrapper a i.icon_github{
 	width: 30px;
@@ -36,21 +35,20 @@ h3.project_title a:hover {
 	color:#464646;
 }
 h3.project_title {
-	font-size:2.4rem;
+	font-size:2.2rem;
 	margin-bottom:0;
 	padding-bottom:0;
 }
 p.project_tags {
-	margin:0.5rem 0 0.8rem 0;
+	margin:0.3rem 0 0.6rem 0;
 	padding:0;
 }
 .project_tags em {
-	color:rgb(105, 105, 105);
+	color:rgb(119, 119, 119);
 }
 p.project_description {
 	margin:0;
 	padding:0;
-	line-height:2rem;
 }
 .projects_wrapper_left img {
 	padding: 0.3rem;

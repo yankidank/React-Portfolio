@@ -6,7 +6,8 @@ ul.skill-list li {
 	border: 1px solid #dfdbdb;
 	padding: 8px 10px;
 	margin: 0 5px 5px 0;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	font-weight:300;
 	cursor: default;
-	color:rgb(105, 105, 105);
+	color:rgb(119, 119, 119);
 }

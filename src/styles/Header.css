@@ -1,10 +1,9 @@
 header h1 {
 	cursor: default;
 	margin:0 0 0 0;
-	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-	font-size:6.7rem;
+	font-size:6.4rem;
+	font-weight:500;
 	line-height: 1;
-	letter-spacing:0.22rem;
 }
 header h1.page-title a {
 	color:#fff;
@@ -13,7 +12,7 @@ header h3 {
 	cursor: default;
 	font-family: 'Dancing Script', serif;
 	font-weight:normal;
-	font-size:3rem;
+	font-size:3.4rem;
 	letter-spacing:0.1rem;
 	margin-top:0px;
 }
@@ -29,8 +28,8 @@ header h3 {
 }
 .rainbow {
 	color: transparent;
-	background: linear-gradient(-90deg, #8597ff, #ffb1ffec, #ffc9b0, #b2faf0dc, #ffffff);
-	background-size: 104% 100%;
+	background: linear-gradient(-90deg, #9bcffffb, #fab8e6f3, #ffe5beea, #b3ffd3dc, #b7d4ff);
+	background-size: 80% 100%;
 	background-clip:text;
 	-webkit-background-clip:text;
 	text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
@@ -56,6 +55,6 @@ header h3 {
 		font-size:4.4rem;
 	}
 	header h3 {
-		font-size:3rem;
+		font-size:2.8rem;
 	}
 }

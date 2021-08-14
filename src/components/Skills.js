@@ -8,9 +8,7 @@ function Skills(props) {
 				<div className="content_full skills">
 					<h2>Skills</h2>
 					<ul className="skill-list"> 
-						<li>Product Management</li>
 						<li>UI/UX Design</li>
-						<li>Agile Development</li>
 						<li>JavaScript</li>
 						<li>MongoDB</li>
 						<li>Mongoose</li>
@@ -34,6 +32,8 @@ function Skills(props) {
 						<li>WordPress</li>
 						<li>GitHub</li>
 						<li>Apache</li>
+						<li>Product Management</li>
+						<li>Agile Development</li>
 						<li>eCommerce</li>
 						<li>Content Management Systems</li>
 						<li>Adobe Creative Suite</li>
