@@ -8,7 +8,7 @@ function Header(props) {
 		<header id="page-header">
 			<div data-tilt-full-page-listening className="header">
 				<h1 className="page-title"><a href={hostname}>{title}</a></h1>
-				<h3 className="page-description rainbow">{description}</h3>
+				<h3 className="page-subtitle">{description}</h3>
 			</div>
 		</header>
 	)

@@ -22,12 +22,21 @@ header h3 {
 	text-align:center;
 	color:#fff;
 	padding:1.5rem 0;
+	transform: perspective(1000px);
+}
+.header, .page-title, .page-subtitle {
+	transform-style: preserve-3d;
 }
 #page-header {
 	will-change: transform; 
 }
-.rainbow {
+.page-title {
+	transform: translateZ(55px);
+}
+.page-subtitle {
+	transform: translateZ(20px);
 	color: transparent;
+	opacity:0.8;
 	background: linear-gradient(-90deg, #9bcffffb, #fab8e6f3, #ffe5beea, #b3ffd3dc, #b7d4ff);
 	background-size: 80% 100%;
 	background-clip:text;
