@@ -234,15 +234,15 @@ class App extends Component {
     })
     VanillaTilt.init(document.querySelector(".header"), {
     	reverse: true,
-    	max: 10,
-    	speed: 400,
-    	startY: -45,
-    	perspective: 500,
+    	max: 12,
+    	speed: 3000,
+    	startY: -50,
+      easing: "cubic-bezier(.05,.94,.5,.99)",
       gyroscope:   true,
-        gyroscopeMinAngleX: -55,
-        gyroscopeMaxAngleX:  55,
-        gyroscopeMinAngleY: -55,
-        gyroscopeMaxAngleY:  55
+        gyroscopeMinAngleX: -90,
+        gyroscopeMaxAngleX:  90,
+        gyroscopeMinAngleY: -90,
+        gyroscopeMaxAngleY:  90
     });
     VanillaTilt.init(document.querySelector(".footer-contact"), {
     	reverse: true,
