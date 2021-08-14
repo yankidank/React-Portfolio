@@ -237,12 +237,7 @@ class App extends Component {
     	max: 12,
     	speed: 3000,
     	startY: -50,
-      easing: "cubic-bezier(.05,.94,.5,.99)",
-      gyroscope:   true,
-        gyroscopeMinAngleX: -90,
-        gyroscopeMaxAngleX:  90,
-        gyroscopeMinAngleY: -90,
-        gyroscopeMaxAngleY:  90
+      easing: "cubic-bezier(.05,.94,.5,.9)"
     });
     VanillaTilt.init(document.querySelector(".footer-contact"), {
     	reverse: true,
