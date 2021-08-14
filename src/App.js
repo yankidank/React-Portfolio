@@ -234,10 +234,15 @@ class App extends Component {
     });
     VanillaTilt.init(document.querySelector(".header"), {
     	reverse: true,
-    	max: 10,
+    	max: 7,
     	speed: 5500,
-    	startY: -40,
-      easing: "cubic-bezier(.05,.94,.5,.9)"
+    	startY: -50,
+      easing: "cubic-bezier(.05,.94,.5,.9)",
+    	gyroscope:   true,
+      gyroscopeMinAngleX: -85,
+      gyroscopeMaxAngleX:  85,
+      gyroscopeMinAngleY: -85,
+      gyroscopeMaxAngleY:  85
     });
     VanillaTilt.init(document.querySelector(".footer-contact"), {
     	reverse: true,
@@ -246,10 +251,10 @@ class App extends Component {
     	speed: 4000,
     	easing: "cubic-bezier(.07,.98,.52,.99)",
     	gyroscope:   true,
-      gyroscopeMinAngleX: -55,
-      gyroscopeMaxAngleX:  55,
-      gyroscopeMinAngleY: -55,
-      gyroscopeMaxAngleY:  55
+      gyroscopeMinAngleX: -80,
+      gyroscopeMaxAngleX:  80,
+      gyroscopeMinAngleY: -80,
+      gyroscopeMaxAngleY:  80
     });
 
   }
