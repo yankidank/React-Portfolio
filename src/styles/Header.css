@@ -1,10 +1,10 @@
 header h1 {
 	cursor: default;
 	margin:0 0 0 0;
-	font-family: 'Alegreya Sans', Helvetica, sans-serif;
-	font-size:7rem;
+	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size:6.7rem;
 	line-height: 1;
-	letter-spacing: -.1rem;
+	letter-spacing:0.22rem;
 }
 header h1.page-title a {
 	color:#fff;
@@ -27,6 +27,14 @@ header h3 {
 #page-header {
 	will-change: transform; 
 }
+.rainbow {
+	color: transparent;
+	background: linear-gradient(-90deg, #8597ff, #ffb1ffec, #ffc9b0, #b2faf0dc, #ffffff);
+	background-size: 104% 100%;
+	background-clip:text;
+	-webkit-background-clip:text;
+	text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+}
 @media only screen and (max-width: 820px) {
 	.header {
 		width:420px;
@@ -45,9 +53,9 @@ header h3 {
 }
 @media only screen and (max-width: 1080px) {
 	header h1 {
-		font-size:5rem;
+		font-size:6rem;
 	}
 	header h3 {
-		font-size:2.4rem;
+		font-size:3rem;
 	}
 }
