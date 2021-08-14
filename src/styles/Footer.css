@@ -59,6 +59,7 @@ footer .container .row h2 {
 	width: 168px;
 }
 .footer-contact-icons a i {
+	opacity:1;
 	background-size:55px;
 	height:55px;
 	width:55px;
