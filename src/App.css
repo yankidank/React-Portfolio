@@ -64,7 +64,6 @@ h2 {
 i {
 	font-style:normal;
 }
-
 .column-50 {
 	flex: 0 0 50%;
 	max-width: 50%;
@@ -103,24 +102,5 @@ i {
 	.main_content .container .row .column-75, .main_content .container .row .column-25, .main_content .container .row .column-50 {
 		flex: 0 0 100%;
 		max-width: 100%;
-	}
-}
-
-/* The Net */
-@keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
-	}
-	40% {
-		-webkit-transform: translateY(-10px);
-		-ms-transform:     translateY(-10px);
-		transform:         translateY(-10px)
-	}
-	60% {
-		-webkit-transform: translateY(-4px);
-		-ms-transform:     translateY(-4px);
-		transform:         translateY(-4px)
 	}
 }
