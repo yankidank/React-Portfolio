@@ -237,7 +237,12 @@ class App extends Component {
     	max: 10,
     	speed: 400,
     	startY: -45,
-    	perspective: 500
+    	perspective: 500,
+      gyroscope:   true,
+        gyroscopeMinAngleX: -55,
+        gyroscopeMaxAngleX:  55,
+        gyroscopeMinAngleY: -55,
+        gyroscopeMaxAngleY:  55
     });
     VanillaTilt.init(document.querySelector(".footer-contact"), {
     	reverse: true,
