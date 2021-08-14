@@ -92,10 +92,6 @@ i {
 }
 
 @media only screen and (max-width: 640px) {
-	main .container {
-		flex: 0 0 96%;
-		max-width: 96%;
-	}
 	main .container .row .column.column-80 {
 		flex: 0 0 100%;
 		max-width: 100%;
