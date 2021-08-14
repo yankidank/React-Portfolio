@@ -2,7 +2,7 @@
 
 View a demo on my portfolio website: https://ericheikkinen.com
 
-![EricHeikkinen.com](https://user-images.githubusercontent.com/18619/82945368-9fc6e180-9f51-11ea-9ab7-7d3a12438dba.jpg)
+![EricHeikkinen.com](https://user-images.githubusercontent.com/18619/129461132-5c0d74ce-ff73-4b58-bfae-1e140899b5bf.jpeg)
 
 
 # Setup
