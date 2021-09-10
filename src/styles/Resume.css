@@ -1,0 +1,23 @@
+.resume-pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+}
+.button a:hover {
+    cursor: pointer;
+}
+.button {
+    border-color:rgb(208 208 208 / 100%);
+}
+.resume-download a {
+    color:rgb(3, 27, 49);
+}
+.resume-back {
+    background-color:rgba(158, 158, 158, 0.6);
+    margin-left:15px;
+}
+.resume-back a {    
+    color:#fff;
+}
