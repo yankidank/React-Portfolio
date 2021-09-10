@@ -10,6 +10,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Portfolio from './components/Portfolio';
 import Project from './components/Project';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 import ScreenPliggHome from './img/screens/pligg-home.jpg';
@@ -265,7 +266,12 @@ class App extends Component {
                   <div className="column column-90 wrapper main_content content_wrapper">	
                     <div className="container">
                       <Switch>
-                        <Route path="/about">
+                        <Route path="/resume/">
+                          <div className="row">
+                            <Resume />
+                          </div>
+                        </Route>
+                        <Route path="/about/">
                           <div className="row">
                             <About 
                               title="About Me" 
@@ -274,7 +280,6 @@ class App extends Component {
                             />
                             <Contact 
                               title="Contact" 
-                              resume="Heikkinen_Resume.pdf" 
                               email={email} 
                               github={github} 
                               linkedin={linkedin} 
@@ -289,7 +294,7 @@ class App extends Component {
                           />
                           <Skills />
                         </Route>
-                        <Route path="/portfolio">
+                        <Route path="/portfolio/">
                           <div className="row">
                             <div className="column">
                               <h2>Projects</h2>
@@ -307,7 +312,6 @@ class App extends Component {
                             />
                             <Contact 
                               title="Contact" 
-                              resume="Heikkinen_Resume.pdf" 
                               email={email} 
                               github={github} 
                               linkedin={linkedin} 
