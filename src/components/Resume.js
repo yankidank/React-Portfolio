@@ -22,9 +22,9 @@ function Resume(props) {
                         <div className="button resume-back float-right">
                             <a href="../" >Back</a>
                         </div>
-                        <div className="button button-outline resume-download float-right">
-                            <a href={ResumePDF} download rel="noreferrer">PDF Download</a>
-                        </div>
+                        <a href={ResumePDF} download rel="noreferrer" className="button button-outline resume-download float-right">
+                            PDF Download
+                        </a>
                     </div>
                 </div>
             </div>
