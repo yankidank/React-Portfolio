@@ -2,13 +2,12 @@ import React from "react";
 import "../styles/Contact.css";
 
 function Contact(props) {
-	const { title, email, github, linkedin } = props;
-	const email_link = 'mailto:'+email;
-	const github_link = 'https://github.com/'+github;
-	const linkedin_link = 'https://www.linkedin.com/in/'+linkedin;
+	const email_link = 'mailto:'+process.env.REACT_APP_CONTACT_EMAIL;
+	const github_link = 'https://github.com/'+process.env.REACT_APP_CONTACT_GITHUB;
+	const linkedin_link = 'https://www.linkedin.com/in/'+process.env.REACT_APP_CONTACT_LINKEDIN;
 	return (
 		<div className="column column-25 contact">	
-			<h2>{title}</h2> 
+			<h2>Contact</h2> 
 			<div className="container">
 				<div className="row">
 					<div className="column">

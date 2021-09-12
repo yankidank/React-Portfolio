@@ -42,10 +42,6 @@ import ScreenAttornme from './img/screens/attornme.jpg';
 import ScreenAvalanche from './img/screens/avalanche.jpg';
 import ScreenEgallery from './img/screens/egallery.jpg';
 
-const email = 'ericheikkinen@gmail.com';
-const github = 'yankidank';
-const linkedin = 'finnished';
-
 const portfolio = [
   {
     id: 1,
@@ -278,12 +274,7 @@ class App extends Component {
                               description="I'm a Full Stack developer specializing in UI/UX design. I hold a Bachelor of Fine Arts from Savannah College of Art and Design and a certificate in Full Stack Web Development from UCLA Extension. Technically proficient with both MERN (MongoDB, Express, React, Node) and LAMP (Linux, Apache, MySQL, PHP) stacks. Founded and developed the popular open source project Pligg CMS." 
                               personal="My interests outside of web development include music, photography, travel, finance, and politics." 
                             />
-                            <Contact 
-                              title="Contact" 
-                              email={email} 
-                              github={github} 
-                              linkedin={linkedin} 
-                            />
+                            <Contact />
                           </div>
                           <Education 
                             title="Education" 
@@ -312,9 +303,6 @@ class App extends Component {
                             />
                             <Contact 
                               title="Contact" 
-                              email={email} 
-                              github={github} 
-                              linkedin={linkedin} 
                             />
                           </div>
                           <Education title="Education" school1="UCLA Extension Coding Bootcamp" school1_description="Full Stack Web Development" school2="Savannah College of Art and Design" school2_description="B.F.A. Film and Television Production" />
@@ -334,7 +322,7 @@ class App extends Component {
               </div>
             </main>
             <div className="page-divider"></div>
-            <Footer email={email} github={github} linkedin={linkedin} />
+            <Footer />
         </div>
       </Router>
     );
