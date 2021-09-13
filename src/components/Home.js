@@ -58,27 +58,11 @@ function Home() {
                                             <Resume />
                                         </div>
                                     </Route>
-                                    <Route path="/about/">
-                                        <div className="row">
-                                            <About 
-                                                description="I'm a Full Stack developer specializing in UI/UX design. I hold a Bachelor of Fine Arts from Savannah College of Art and Design and a certificate in Full Stack Web Development from UCLA Extension. Technically proficient with both MERN (MongoDB, Express, React, Node) and LAMP (Linux, Apache, MySQL, PHP) stacks. Founded and developed the popular open source project Pligg CMS." 
-                                                personal="My interests outside of web development include music, photography, travel, finance, and politics." 
-                                            />
-                                            <Contact />
-                                        </div>
-                                        <Education 
-                                            school1="UCLA Extension Coding Bootcamp" 
-                                            school1_description="Full Stack Web Development" 
-                                            school2="Savannah College of Art and Design" 
-                                            school2_description="B.F.A. Film and Television Production" 
-                                        />
-                                        <Skills />
-                                    </Route>
                                     <Route path="/">
                                         <div className="row">
                                             <About 
-                                                description="I'm a Full Stack developer specializing in UI/UX design. I hold a Bachelor of Fine Arts from Savannah College of Art and Design and a certificate in Full Stack Web Development from UCLA Extension. Technically proficient with both MERN (MongoDB, Express, React, Node) and LAMP (Linux, Apache, MySQL, PHP) stacks. Founded and developed the popular open source project Pligg CMS." 
-                                                personal="My interests outside of web development include music, photography, travel, finance, and politics." 
+                                                description="I am a Full Stack Developer specializing in Front-End Design and JavaScript-based programming languages. I hold a Bachelor of Fine Arts from Savannah College of Art and Design and a certificate in Full Stack Web Development from UCLA Extension. Technically proficient with both MERN (MongoDB, Express, React, Node) and LAMP (Linux, Apache, MySQL, PHP) stacks. I founded and developed the open source project Pligg CMS, which was one of the first widely used social networking content management systems." 
+                                                personal="My interests outside of web development include music, photography, psychology, philosophy, politics, and finance." 
                                             />
                                             <Contact />
                                         </div>
