@@ -1,41 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useEasybase } from 'easybase-react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {Autoplay, Pagination} from 'swiper/core';  
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "../styles/Project.css";
-import portfolio from '../ProjectData';
 
 SwiperCore.use([Autoplay, Pagination]);
 
 function Project(props) {
+
+	const [easybaseData, setEasybaseData] = useState([]);
+	const [easybaseImg, setEasybaseImg] = useState([]);
+	const { db } = useEasybase();
 	const id = parseInt(props.match.params.id);
-	function checkId(project) {
-		return project.id === id;
-	}
-	const project = portfolio.filter(checkId);
 	var images = [];
 
-	project.map(function(item){
-		for (var i = 0; i < item.screens.length; i++) {
-			var imgKey = 'img-'+i;
-			images.push(<SwiperSlide key={imgKey}><img alt={item.title} title={item.title} src={item.screens[i]} /></SwiperSlide>);
+	useEffect(() => {
+	  	mounted();
+		async function mounted() {
+			const ebData = await db("HEIKKINEN-CONTENT").return().where({ post: id }).one();
+			setEasybaseData(ebData);
+			//const ebImg = await db("HEIKKINEN-IMAGES").return().where({ post: id}).where({ displayOrder: 1 }).all();
+			const ebImg = await db("HEIKKINEN-IMAGES").return().where({ post: id}).orderBy({ by: "displayOrder", sort: "asc" }).all();
+			setEasybaseImg(ebImg);
 		}
-		return '';
-	})
+	}, [db, id]);
+
+	easybaseImg.forEach(item => {
+		console.log(item)
+		images.push(<SwiperSlide key={item._key}><img alt={easybaseData.title} title={easybaseData.title} src={item.image} /></SwiperSlide>);
+	});
+	
 	function slideControl(){
 		if (images.length > 1){
-			// 2+ images
 			return true
 		} else {
-			// 1 image
 			return false
 		}
 	}
 	return (
-		<div>
-			{project.map(item => (
-				<div className="row project-row" key={item.id}>
+		<>
+			{[easybaseData].map(item => (
+				<div className="row project-row" key={item._key+Math.random()}>
 					<div className="column">
 						<div className="projects_wrapper_left" id="project_left">
 							{slideControl() ? <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{"clickable": true}} autoplay={{ "delay": 5000, "disableOnInteraction": false }} className="swiper-wrapper">{images}</Swiper> : <div>{images}</div> }
@@ -53,7 +60,7 @@ function Project(props) {
 					</div>
 				</div>
 			))}
-		</div>
+		</>
 	);
 }
 
