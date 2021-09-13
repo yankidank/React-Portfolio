@@ -27,7 +27,7 @@ function Home() {
             max: 7,
             speed: 5500,
             startY: -50,
-        easing: "cubic-bezier(.05,.94,.5,.9)"
+            easing: "cubic-bezier(.05,.94,.5,.9)"
         });
         VanillaTilt.init(document.querySelector(".footer-contact"), {
             reverse: true,
@@ -36,10 +36,10 @@ function Home() {
             speed: 4000,
             easing: "cubic-bezier(.07,.98,.52,.99)",
             gyroscope:   true,
-        gyroscopeMinAngleX: -55,
-        gyroscopeMaxAngleX:  55,
-        gyroscopeMinAngleY: -55,
-        gyroscopeMaxAngleY:  55
+            gyroscopeMinAngleX: -55,
+            gyroscopeMaxAngleX:  55,
+            gyroscopeMinAngleY: -55,
+            gyroscopeMaxAngleY:  55
         });
     }, [])
     return (
