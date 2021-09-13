@@ -22,13 +22,12 @@ function Project(props) {
 			const ebData = await db("HEIKKINEN-CONTENT").return().where({ post: id }).one();
 			setEasybaseData(ebData);
 			//const ebImg = await db("HEIKKINEN-IMAGES").return().where({ post: id}).where({ displayOrder: 1 }).all();
-			const ebImg = await db("HEIKKINEN-IMAGES").return().where({ post: id}).orderBy({ by: "displayOrder", sort: "asc" }).all();
+			const ebImg = await db("HEIKKINEN-IMAGES").return().where({ post: id}).orderBy({ by: "displayorder", sort: "asc" }).all();
 			setEasybaseImg(ebImg);
 		}
 	}, [db, id]);
 
 	easybaseImg.forEach(item => {
-		console.log(item)
 		images.push(<SwiperSlide key={item._key}><img alt={easybaseData.title} title={easybaseData.title} src={item.image} /></SwiperSlide>);
 	});
 	
