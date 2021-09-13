@@ -7,6 +7,20 @@ View a demo on my portfolio website: https://ericheikkinen.com
 
 # Setup
 
+## Easybase Database
+
+This project utilizes [Easybase](https://easybase.io/) to store and serve portfolio project data. Review [this tutorial](https://easybase.io/react/) for instructions on how to setup your own Easybase project. To connect with your own Easybase project, replace the 'ebconfig.js' file in the 'src' directory with your own projects configuration file.
+
+Seed the Easybase content table using the file /src/HEIKKINEN-CONTENT.json
+
+![Content Table](https://user-images.githubusercontent.com/18619/133128231-d63b7df4-95a2-47b0-8650-6e856dccf6db.png)
+
+Images are stored in a second table with 3 columns: post, image, and displayorder. You will need to manually add this table and data, no seed is provided.
+
+![Image Table](https://user-images.githubusercontent.com/18619/133128225-abdba701-f418-4e70-8480-e1ebce282360.png)
+
+## Installation
+
 Run `npm i` to install required node_modules
 
 ### `npm start`

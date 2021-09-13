@@ -1,42 +1,56 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import { useEasybase } from 'easybase-react';
 import { InView } from 'react-intersection-observer';
 import "../styles/Portfolio.css";
 
-function Portfolio(props) {
-	const portfolio = props.cards;
+function Portfolio() {
 
-	function intersectionView(inView, id) {
-		const imageView = document.getElementById( id );
-		if (inView && imageView.classList[0] !== 'animate' && imageView.classList[0] !== 'inView'){
-			imageView.classList.add('animate');
-		} else if (imageView.classList[0] === 'animate'){
-			imageView.classList.remove('animate');
-			imageView.classList.add('inView');
-		} else if (!inView) {
-			imageView.classList.remove('animate');
+	const [easybaseData, setEasybaseData] = useState([]);
+	const [easybaseImg, setEasybaseImg] = useState([]);
+	const { db } = useEasybase();
+
+	useEffect(() => {
+	  	mounted();
+		async function mounted() {
+			const ebData = await db("HEIKKINEN-CONTENT").return().all();
+			setEasybaseData(ebData);
+			const ebImg = await db("HEIKKINEN-IMAGES").return().where({ displayorder: 1 }).limit(25).orderBy({ by: "post", sort: "asc" }).all();
+			setEasybaseImg(ebImg);
+		}
+	}, [db]);
+
+	function intersectionView(inView, post) {
+		if (inView){
+			const imageView = document.getElementById( post );
+			if (imageView !== null){
+				imageView.classList.add('animate');
+			}
 		}
 	}
 
 	return (
 		<div>
-			{portfolio.map(item => (
-				<InView as="div" onChange={(inView) => intersectionView(inView, item.id) } key={item.id}>		
+			{easybaseData.map(item => (
+				<InView as="div" onChange={(inView) => intersectionView(inView, item.post) } key={"observer_"+item._key}>	
 					<div className="row portfolio-row">
 						<div className="column column-50">
 							<div className="projects_wrapper_left" >
-								<a href={'./project/'+item.id}>
-									<img 
-										id={item.id}
-										alt={item.title} 
-										title={item.title} 
-										src={item.screens[0]} 
-									/>
+								<a href={'./project/'+item.post}>
+									{easybaseImg.filter(e => e.post === item.post).map(img => (
+										<img
+											key={item._key} 
+											src={img.image} 
+											id={item.post}
+											alt={item.title} 
+											title={item.title} 
+										/>
+									))}	
 								</a>
 							</div>
 						</div>
 						<div className="column column-50">
 							<div className="projects_wrapper_right">
-								<h3 className="project_title"><a href={'./project/'+item.id}>{item.title}</a></h3>
+								<h3 className="project_title"><a href={'./project/'+item.post}>{item.title}</a></h3>
 								<p className="project_tags"><em>{item.tags}</em></p>
 								<p className="project_description">{item.description}</p>
 								<div className="projects_buttons_wrapper">

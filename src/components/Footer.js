@@ -3,11 +3,9 @@ import { InView } from 'react-intersection-observer';
 import "../styles/Footer.css";
 
 function Footer(props) {
-	const { email, github, linkedin } = props;
-	const email_link = 'mailto:'+email;
-	const github_link = 'https://github.com/'+github;
-	const linkedin_link = 'https://www.linkedin.com/in/'+linkedin;
-
+	const email_link = 'mailto:'+process.env.REACT_APP_CONTACT_EMAIL;
+	const github_link = 'https://github.com/'+process.env.REACT_APP_CONTACT_GITHUB;
+	const linkedin_link = 'https://www.linkedin.com/in/'+process.env.REACT_APP_CONTACT_LINKEDIN;
 
 	function intersectionView(inView) {
 		const imageView = document.getElementById('footer_container');
