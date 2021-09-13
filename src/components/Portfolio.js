@@ -14,7 +14,7 @@ function Portfolio() {
 		async function mounted() {
 			const ebData = await db("HEIKKINEN-CONTENT").return().all();
 			setEasybaseData(ebData);
-			const ebImg = await db("HEIKKINEN-IMAGES").return().where({ displayOrder: 1 }).limit(25).orderBy({ by: "post", sort: "asc" }).all();
+			const ebImg = await db("HEIKKINEN-IMAGES").return().where({ displayorder: 1 }).limit(25).orderBy({ by: "post", sort: "asc" }).all();
 			setEasybaseImg(ebImg);
 		}
 	}, [db]);

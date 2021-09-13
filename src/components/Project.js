@@ -21,7 +21,6 @@ function Project(props) {
 		async function mounted() {
 			const ebData = await db("HEIKKINEN-CONTENT").return().where({ post: id }).one();
 			setEasybaseData(ebData);
-			//const ebImg = await db("HEIKKINEN-IMAGES").return().where({ post: id}).where({ displayOrder: 1 }).all();
 			const ebImg = await db("HEIKKINEN-IMAGES").return().where({ post: id}).orderBy({ by: "displayorder", sort: "asc" }).all();
 			setEasybaseImg(ebImg);
 		}
