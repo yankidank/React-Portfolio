@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import VanillaTilt from 'vanilla-tilt';
 import Header from './Header';
 import About from './About';
 import Contact from './Contact';
@@ -11,8 +11,37 @@ import Project from './Project';
 import Resume from './Resume';
 import Footer from './Footer';
 
-
 function Home() {
+    useEffect(() => {
+        // Tilt
+        VanillaTilt.init(document.querySelectorAll(".portfolio-row div .projects_wrapper_left"), {
+            reverse: true,
+            max: 5,
+            scale: 1.05,
+            speed: 4000,
+            perspective: 2000,
+            easing: "cubic-bezier(.03,.98,.52,.99)"
+        });
+        VanillaTilt.init(document.querySelector(".header"), {
+            reverse: true,
+            max: 7,
+            speed: 5500,
+            startY: -50,
+        easing: "cubic-bezier(.05,.94,.5,.9)"
+        });
+        VanillaTilt.init(document.querySelector(".footer-contact"), {
+            reverse: true,
+            max: 8,
+            scale: 1.25,
+            speed: 4000,
+            easing: "cubic-bezier(.07,.98,.52,.99)",
+            gyroscope:   true,
+        gyroscopeMinAngleX: -55,
+        gyroscopeMaxAngleX:  55,
+        gyroscopeMinAngleY: -55,
+        gyroscopeMaxAngleY:  55
+        });
+    }, [])
     return (
         <Router>
             <Header title="Eric Heikkinen" description="Los Angeles • California" />
