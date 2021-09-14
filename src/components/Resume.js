@@ -16,7 +16,7 @@ function Resume(props) {
             <div className="container">
                 <div className="row">
                     <div className="column">
-                        <h2>Eric's Résumé</h2>
+                        <h2>Résumé</h2>
                     </div>
                     <div className="column">
                         <a href="../" className="button resume-back float-right">
