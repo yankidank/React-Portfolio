@@ -19,9 +19,9 @@ function Resume(props) {
                         <h2>Eric's Résumé</h2>
                     </div>
                     <div className="column">
-                        <div className="button resume-back float-right">
-                            <a href="../" >Back</a>
-                        </div>
+                        <a href="../" className="button resume-back float-right">
+                            Back
+                        </a>
                         <a href={ResumePDF} download rel="noreferrer" className="button button-outline resume-download float-right">
                             PDF Download
                         </a>
