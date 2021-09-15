@@ -27,7 +27,7 @@ function Footer(props) {
 				<div className="container" id="footer_container">
 					<div className="row">
 						<div className="column">
-							<h2>Reach Out</h2>
+							<h2>Let's Connect</h2>
 						</div>
 					</div>
 					<div className="row">
