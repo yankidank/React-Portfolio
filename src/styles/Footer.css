@@ -38,15 +38,15 @@ footer .container .row h2 {
 	background-position: center center;
 	background-size: cover;
 	border: 3px solid #fff;
-	border-radius: 260px;
-	height:260px;
-	width:260px;
+	border-radius: 200px;
+	height:200px;
+	width:200px;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
 }
 .footer-inner-contact {
 	text-align:center;
-	padding-top:17rem;
-	border-radius: 260px;
+	padding-top:11rem;
+	border-radius: 200px;
 	height:100%;
 	opacity:0.85;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.1);
