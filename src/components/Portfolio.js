@@ -37,13 +37,10 @@ function Portfolio() {
 							<div className="projects_wrapper_left" >
 								<a href={'./project/'+item.post}>
 									{easybaseImg.filter(e => e.post === item.post).map(img => (
-										<img
-											key={item._key} 
-											src={img.image} 
-											id={item.post}
-											alt={item.title} 
-											title={item.title} 
-										/>
+										<picture key={item._key} id={item.post}>
+											{/* <source media="(min-width:650px)" srcset={img.image} /> */}
+											<img src={img.image} alt={item.title} title={item.title} />
+										</picture>
 									))}	
 								</a>
 							</div>

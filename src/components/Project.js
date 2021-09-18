@@ -27,7 +27,14 @@ function Project(props) {
 	}, [db, id]);
 
 	easybaseImg.forEach(item => {
-		images.push(<SwiperSlide key={item._key}><img alt={easybaseData.title} title={easybaseData.title} src={item.image} /></SwiperSlide>);
+		images.push(
+			<SwiperSlide key={item._key}>
+				<picture>
+					{/* <source media="(min-width:650px)" srcset={item.image} /> */}
+					<img alt={easybaseData.title} title={easybaseData.title} src={item.image} />
+				</picture>
+			</SwiperSlide>
+		);
 	});
 	
 	function slideControl(){
