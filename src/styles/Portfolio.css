@@ -50,11 +50,12 @@ p.project_description {
 	margin:0;
 	padding:0;
 }
-.projects_wrapper_left img {
+.projects_wrapper_left a picture img {
 	padding: 0.3rem;
 	margin: 0 0 1.5rem 0;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 12px 0 rgba(0, 0, 0, 0.1);
 	border: 1px solid #ddd;
+	width:auto;
 	object-fit: cover;
 }
 .projects_wrapper_right {

@@ -27,7 +27,14 @@ function Project(props) {
 	}, [db, id]);
 
 	easybaseImg.forEach(item => {
-		images.push(<SwiperSlide key={item._key}><img alt={easybaseData.title} title={easybaseData.title} src={item.image} /></SwiperSlide>);
+		images.push(
+			<SwiperSlide key={item._key}>
+				<picture>
+					{/* <source media="(min-width:650px)" srcset={item.image} /> */}
+					<img alt={easybaseData.title} title={easybaseData.title} src={item.image} />
+				</picture>
+			</SwiperSlide>
+		);
 	});
 	
 	function slideControl(){
@@ -40,7 +47,7 @@ function Project(props) {
 	return (
 		<>
 			{[easybaseData].map(item => (
-				<div className="row project-row" key={item._key+Math.random()}>
+				<article className="row project-row" key={item._key+Math.random()}>
 					<div className="column">
 						<div className="projects_wrapper_left" id="project_left">
 							{slideControl() ? <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{"clickable": true}} autoplay={{ "delay": 5000, "disableOnInteraction": false }} className="swiper-wrapper">{images}</Swiper> : <div>{images}</div> }
@@ -56,7 +63,7 @@ function Project(props) {
 							</div>
 						</div>
 					</div>
-				</div>
+				</article>
 			))}
 		</>
 	);

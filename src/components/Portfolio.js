@@ -21,29 +21,23 @@ function Portfolio() {
 
 	function intersectionView(inView, post) {
 		if (inView){
-			const imageView = document.getElementById( post );
-			if (imageView !== null){
-				imageView.classList.add('animate');
-			}
+			document.getElementById(post)?.classList.add('animate');
 		}
 	}
 
 	return (
 		<div>
 			{easybaseData.map(item => (
-				<InView as="div" onChange={(inView) => intersectionView(inView, item.post) } key={"observer_"+item._key}>	
+				<InView as="article" onChange={(inView) => intersectionView(inView, item.post) } key={"observer_"+item._key}>	
 					<div className="row portfolio-row">
 						<div className="column column-50">
 							<div className="projects_wrapper_left" >
 								<a href={'./project/'+item.post}>
 									{easybaseImg.filter(e => e.post === item.post).map(img => (
-										<img
-											key={item._key} 
-											src={img.image} 
-											id={item.post}
-											alt={item.title} 
-											title={item.title} 
-										/>
+										<picture key={item._key} id={item.post}>
+											{/* <source media="(min-width:650px)" srcset={img.image} /> */}
+											<img src={img.image} alt={item.title} title={item.title} />
+										</picture>
 									))}	
 								</a>
 							</div>
