@@ -47,7 +47,7 @@ function Project(props) {
 	return (
 		<>
 			{[easybaseData].map(item => (
-				<div className="row project-row" key={item._key+Math.random()}>
+				<article className="row project-row" key={item._key+Math.random()}>
 					<div className="column">
 						<div className="projects_wrapper_left" id="project_left">
 							{slideControl() ? <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{"clickable": true}} autoplay={{ "delay": 5000, "disableOnInteraction": false }} className="swiper-wrapper">{images}</Swiper> : <div>{images}</div> }
@@ -63,7 +63,7 @@ function Project(props) {
 							</div>
 						</div>
 					</div>
-				</div>
+				</article>
 			))}
 		</>
 	);

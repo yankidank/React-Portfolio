@@ -31,7 +31,7 @@ function Portfolio() {
 	return (
 		<div>
 			{easybaseData.map(item => (
-				<InView as="div" onChange={(inView) => intersectionView(inView, item.post) } key={"observer_"+item._key}>	
+				<InView as="article" onChange={(inView) => intersectionView(inView, item.post) } key={"observer_"+item._key}>	
 					<div className="row portfolio-row">
 						<div className="column column-50">
 							<div className="projects_wrapper_left" >

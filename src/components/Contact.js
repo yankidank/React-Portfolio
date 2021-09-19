@@ -8,7 +8,7 @@ function Contact(props) {
 	return (
 		<div className="column column-25 contact">	
 			<h2>Contact</h2> 
-			<div className="container">
+			<address className="container">
 				<div className="row">
 					<div className="column">
 					<i className="icon icon_email"></i>
@@ -33,7 +33,7 @@ function Contact(props) {
 					<a href="/resume/" title="Résumé">Resume</a>
 					</div>
 				</div>
-			</div>
+			</address>
 		</div>
 	)
 }
