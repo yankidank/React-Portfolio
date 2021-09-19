@@ -21,10 +21,7 @@ function Portfolio() {
 
 	function intersectionView(inView, post) {
 		if (inView){
-			const imageView = document.getElementById( post );
-			if (imageView !== null){
-				imageView.classList.add('animate');
-			}
+			document.getElementById(post)?.classList.add('animate');
 		}
 	}
 
